@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  min-width: 375px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

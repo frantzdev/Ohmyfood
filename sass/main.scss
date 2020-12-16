@@ -1,5 +1,8 @@
 
 @import "./utils/variables";
 @import "./base/base";
+@import "./base/typography.scss";
 @import "./components/bouton.scss";
+@import "./layout/header.scss";
 
+@import "./pages/accueil.scss";

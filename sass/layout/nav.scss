@@ -1,0 +1,24 @@
+footer {
+    padding: 20px;
+    background-color: #353535;
+    color: white;
+    & ul {
+        list-style-type: none;
+        @media all and ( min-width: 400px) {
+            text-align: center;
+        }
+        & li {
+            padding: 5px 0;
+        }
+
+        & .fa-utensils {
+            padding-right: 8px;
+            font-size: 10px;
+        }
+
+        & .fa-hands-helping {
+            padding-right: 5px;
+            font-size: 9px;
+        }
+    }
+}

@@ -2,13 +2,13 @@
     // border: 1px solid black;
     display: flex;
     flex-direction: column;
-    background: rgb(252, 246, 246);
+    background: $color-background;
     font-family: 'roboto', sans-serif;
 
     &__map {
         font-size: 1.1rem;
         padding: 15px;
-        background-color: rgba(235, 230, 230, 0.89);
+        background-color: #eaeaea;
         box-shadow: 0px -5px 0px rgb(235, 230, 230, 1);
         display: flex;
         justify-content: flex-start;
@@ -44,9 +44,7 @@
             font-size: 0.9rem;
             font-family: 'roboto', sans-serif;
         }
-
     }
-
 }
 
 .fonctionnement h2 {
@@ -61,7 +59,7 @@
     flex-direction: column;
 
     &__primary-choice {
-        background-color: rgba(245, 245, 245, 0.973);
+        background-color: $color-background;
         padding: 30px;
         margin: 10px;
         display: flex;
@@ -91,7 +89,7 @@
     }
 
     &__secondary-choice {
-        background-color: rgba(245, 245, 245, 0.973);
+        background-color: $color-background;
         padding: 30px;
         margin: 10px;
         display: flex;
@@ -120,7 +118,7 @@
     }
 
     &__tertiary-choice {
-        background-color: rgba(245, 245, 245, 0.973);
+        background-color: $color-background;
         padding: 30px;
         margin: 10px;
         display: flex;
@@ -147,25 +145,77 @@
             padding: 0 20px;
         }
     }
-
 }
 
 .menu {
-    border: 1px solid black;
-    padding: 20px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
+    background-color: $color-background;
+
+    & h2 {
+        padding-bottom: 10px;
+    }
+}
+
+.container {
+    @media all and (min-width: 440px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
     &__carte {
         display: flex;
         flex-direction: column;
-        &__photo {
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px grey;
+        margin: 10px;
+
+        @media all and (min-width: 400px) {
+            max-width: 400px;
+        }
+
+        &--photo {
             height: 175px;
             display: flex;
+
             & img {
                 width: 100%;
                 object-fit: cover;
-                border-radius: 20px 20px 0 0;
+            }
+        }
+
+        &__description {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            & span {
+                padding: 5px;
+                background-color: $color-tertiary;
+                color: darkgreen;
+                position: absolute;
+                right: 15px;
+                bottom: 185px;
+            }
+
+            & i {
+                padding-right: 10px;
             }
         }
     }
 }
+
+.background-francaise {
+    width: 100%;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+

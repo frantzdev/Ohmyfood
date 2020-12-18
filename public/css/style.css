@@ -272,39 +272,41 @@ footer ul .fa-hands-helping {
   padding-right: 10px;
 }
 
-.background-francaise {
+.francaise {
+  background-color: #f6f6f6;
+}
+.francaise__image {
   width: 100%;
 }
-
-.background-francaise img {
+.francaise__image img {
   width: 100%;
   object-fit: cover;
 }
-
-.francaise {
+.francaise__carte {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -50px;
 }
-.francaise--titre-menu {
+.francaise__carte__head {
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
-
-.entrees {
+.francaise__entrees {
   padding: 10px;
 }
-.entrees__titre {
+.francaise__entrees--titre {
   padding: 10px;
 }
-.entrees__titre p {
+.francaise__entrees--titre p {
   padding-bottom: 5px;
 }
-.entrees__titre--barre {
+.francaise__entrees--barre {
   border: 2px solid #99E2D0;
   width: 40px;
 }
-.entrees__poulpe {
+.francaise__entrees__poulpe {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -313,14 +315,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.entrees__poulpe--texte {
+.francaise__entrees__poulpe--texte {
   padding: 10px;
 }
-.entrees__poulpe--prix {
+.francaise__entrees__poulpe--prix {
   padding: 10px;
   font-weight: bold;
 }
-.entrees__veloute {
+.francaise__entrees__veloute {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -329,14 +331,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.entrees__veloute--texte {
+.francaise__entrees__veloute--texte {
   padding: 10px;
 }
-.entrees__veloute--prix {
+.francaise__entrees__veloute--prix {
   padding: 10px;
   font-weight: bold;
 }
-.entrees__soupe {
+.francaise__entrees__soupe {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -345,28 +347,27 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.entrees__soupe--texte {
+.francaise__entrees__soupe--texte {
   padding: 10px;
 }
-.entrees__soupe--prix {
+.francaise__entrees__soupe--prix {
   padding: 10px;
   font-weight: bold;
 }
-
-.plats {
+.francaise__plats {
   padding: 10px;
 }
-.plats__titre {
+.francaise__plats--titre {
   padding: 10px;
 }
-.plats__titre p {
+.francaise__plats--titre p {
   padding-bottom: 5px;
 }
-.plats__titre--barre {
+.francaise__plats--barre {
   border: 2px solid #99E2D0;
   width: 40px;
 }
-.plats__coquilles {
+.francaise__plats__coquilles {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -375,14 +376,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.plats__coquilles--texte {
+.francaise__plats__coquilles--texte {
   padding: 10px;
 }
-.plats__coquilles--prix {
+.francaise__plats__coquilles--prix {
   padding: 10px;
   font-weight: bold;
 }
-.plats__magret {
+.francaise__plats__magret {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -391,14 +392,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.plats__magret--texte {
+.francaise__plats__magret--texte {
   padding: 10px;
 }
-.plats__magret--prix {
+.francaise__plats__magret--prix {
   padding: 10px;
   font-weight: bold;
 }
-.plats__pigeonneau {
+.francaise__plats__pigeonneau {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -407,28 +408,27 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.plats__pigeonneau--texte {
+.francaise__plats__pigeonneau--texte {
   padding: 10px;
 }
-.plats__pigeonneau--prix {
+.francaise__plats__pigeonneau--prix {
   padding: 10px;
   font-weight: bold;
 }
-
-.desserts {
+.francaise__desserts {
   padding: 10px;
 }
-.desserts__titre {
+.francaise__desserts--titre {
   padding: 10px;
 }
-.desserts__titre p {
+.francaise__desserts--titre p {
   padding-bottom: 5px;
 }
-.desserts__titre--barre {
+.francaise__desserts--barre {
   border: 2px solid #99E2D0;
   width: 40px;
 }
-.desserts__violettes {
+.francaise__desserts__violettes {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -437,14 +437,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.desserts__violettes--texte {
+.francaise__desserts__violettes--texte {
   padding: 10px;
 }
-.desserts__violettes--prix {
+.francaise__desserts__violettes--prix {
   padding: 10px;
   font-weight: bold;
 }
-.desserts__fondant {
+.francaise__desserts__fondant {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -453,14 +453,14 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.desserts__fondant--texte {
+.francaise__desserts__fondant--texte {
   padding: 10px;
 }
-.desserts__fondant--prix {
+.francaise__desserts__fondant--prix {
   padding: 10px;
   font-weight: bold;
 }
-.desserts__millefeuille {
+.francaise__desserts__millefeuille {
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -469,10 +469,10 @@ footer ul .fa-hands-helping {
   justify-content: space-between;
   align-items: flex-end;
 }
-.desserts__millefeuille--texte {
+.francaise__desserts__millefeuille--texte {
   padding: 10px;
 }
-.desserts__millefeuille--prix {
+.francaise__desserts__millefeuille--prix {
   padding: 10px;
   font-weight: bold;
 }

@@ -1,0 +1,208 @@
+.enchantee {
+    background-color: $color-background;
+
+    &__image {
+        width: 100%;
+
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__carte {
+        background-color: $color-background;
+        border-radius: 40px 40px 0 0;
+        position: relative;
+        top: -50px;
+
+        &__head {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__entrees {
+        padding: 10px;
+
+        &--titre {
+            padding: 10px;
+
+            & p {
+                padding-bottom: 5px;
+            }
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+
+        &__ravioles {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__caviar {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__homard-espuma {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__canard-cuit {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__plats {
+        padding: 10px;
+
+        &--titre {
+            padding: 10px;
+
+            & p {
+                padding-bottom: 5px;
+            }
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+
+        &__saintjacques {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__langoustine {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__queue {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__desserts {
+        padding: 10px;
+
+        &--titre {
+            padding: 10px;
+
+            & p {
+                padding-bottom: 5px;
+            }
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+
+        &__macaronnoisette {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__baba {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+
+        &__tartecitron {
+            @include choix-assiette;
+
+            &--texte {
+                padding: 10px;
+            }
+
+            &--prix {
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}

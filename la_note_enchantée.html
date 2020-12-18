@@ -14,82 +14,113 @@
 <body>
     <div id="page">
         <header>
-            <div><i class="fas fa-arrow-left"></i><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood"></div>
+            <i class="fas fa-arrow-left"></i><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood">
         </header>
 
-        <div><img src="/public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="une assiette de salade">
-        </div>
-        <section class="menu">
-            <h2>La note enchantée<i class="fas fa-heart"></i></h2>
-            <aside class="entrees">
-                <p>Entrées</p>
-                <div class="progress"></div>
-                <div class="ravioles">
-                    <p>Ravioles de foie gras</p>
-                    <p>Accompagnés de leur crème à la truffe</p>
-                    <p>25€</p>
-                </div>
-                <div class="caviar">
-                    <p>Caviar osciètre </p>
-                    <p>Sur blini à la farine de blé noir</p>
-                    <p>35€</p>
-                </div>
-                <div class="homard-espuma">
-                    <p>Homard et espuma de potiron</p>
-                    <p>Mariné aux zestes d'orange</p>
-                    <p>20€</p>
-                </div>
-                <div class="canard-cuit">
-                    <p>Foie gras de canard cuit entier</p>
-                    <p>Confiture de figue et pain toasté</p>
-                    <p>35€</p>
-                </div>
-            </aside>
 
-            <aside class="plats">
-                <p>Plats</p>
-                <div class="progress"></div>
-                <div class="saint-jacques">
-                    <p>Noix de coquilles Saint-Jacques</p>
-                    <p>Sur lit de purée de céleri-rave</p>
-                    <p>40€</p>
+        <section class="enchantee">
+            <div class="enchantee__image">
+                <img src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="une assiette enchantee">
+            </div>
+            <div class="enchantee__carte">
+                <div class="enchantee__carte__head">
+                    <h2>La note enchantée</h2><span><i class="far fa-heart"></i></span>
                 </div>
-                <div class="langoustine">
-                    <p>Langoustine poêlée</p>
-                    <p>Purée de patate douce</p>
-                    <p>35€</p>
-                </div>
-                <div class="queue-de-boeuf">
-                    <p>Mijoté de queue de boeuf </p>
-                    <p>Et riz sauvage aux zestes de citron</p>
-                    <p>44€</p>
-                </div>
-            </aside>
+                <aside class="enchantee__entrees">
+                    <div class="enchantee__entrees--titre">
+                        <p>Entrées</p>
+                        <div class="enchantee__entrees--barre"></div>
+                    </div>
+                    <div class="enchantee__entrees__ravioles">
+                        <div class="enchantee__entrees__ravioles--texte">
+                            <h3>Ravioles de foie gras</h3>
+                            <p>Accompagnés de leur crème à la truffe</p>
+                        </div>
+                        <p class="enchantee__entrees__ravioles--prix">25€</p>
+                    </div>
+                    <div class="enchantee__entrees__caviar">
+                        <div class="enchantee__entrees__caviar--texte">
+                            <h3>Caviar osciètre </h3>
+                            <p>Sur blini à la farine de blé noir</p>
+                        </div>
+                        <p class="enchantee__entrees__caviar--prix">35€</p>
+                    </div>
+                    <div class="enchantee__entrees__homard-espuma">
+                        <div class="enchantee__entrees__homard-espuma--texte">
+                            <h3>Homard et espuma de potiron</h3>
+                            <p>Mariné aux zestes d'orange</p>
+                        </div>
+                        <p class="enchantee__entrees__homard-espuma--prix">20€</p>
+                    </div>
+                    <div class="enchantee__entrees__canard-cuit">
+                        <div class="enchantee__entrees__canard-cuit--texte">
+                            <h3>Foie gras de canard cuit entier</h3>
+                            <p>Confiture de figue et pain toasté</p>
+                        </div>
+                        <p class="enchantee__entrees__canard-cuit--prix">35€</p>
+                    </div>
+                </aside>
 
-            <aside class="desserts">
-                <p>Desserts</p>
-                <div class="progress"></div>
-                <div class="macaron-noisette">
-                    <p>Macaron noisette et chocolat</p>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                    <p>18€</p>
-                </div>
-                <div class="baba">
-                    <p>Baba au rhum revisité</p>
-                    <p>Avec son coulis de citron</p>
-                    <p>22€</p>
-                </div>
-                <div class="tarte-citron">
-                    <p>Tarte au citron meringuée</p>
-                    <p>Déstructurée</p>
-                    <p>23€ </p>
-                </div>
-            </aside>
-            
-            <button>
-                <p>Commander</p>
-            </button>
+                <aside class="enchantee__plats">
+                    <div class="enchantee__plats--titre">
+                        <p>Plats</p>
+                        <div class="enchantee__plats--barre"></div>
+                    </div>
+                    <div class="enchantee__plats__saintjacques">
+                        <div class="enchantee__plats__saintjacques--texte">
+                            <h3>Noix de coquilles Saint-Jacques</h3>
+                            <p>Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <p class="enchantee__plats__saintjacques--prix">40€</p>
+                    </div>
+                    <div class="enchantee__plats__langoustine">
+                        <div class="enchantee__plats__langoustine--texte">
+                            <h3>Langoustine poêlée</h3>
+                            <p>Purée de patate douce</p>
+                        </div>
+                        <p class="enchantee__plats__langoustine--prix">35€</p>
+                    </div>
+                    <div class="enchantee__plats__queue">
+                        <div class="enchantee__plats__queue--texte">
+                            <h3>Mijoté de queue de boeuf </h3>
+                            <p>Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <p class="enchantee__plats__queue--prix">44€</p>
+                    </div>
+                </aside>
 
+                <aside class="enchantee__desserts">
+                    <div class="enchantee__desserts--titre">
+                        <p>Plats</p>
+                        <div class="enchantee__desserts--barre"></div>
+                    </div>
+                    <div class="enchantee__desserts__macaronnoisette">
+                        <div class="enchantee__desserts__macaronnoisette--texte">
+                        <p>Macaron noisette et chocolat</p>
+                        <p>Glace au caramel brun et sel de Guérande</p>
+                    </div>
+                        <p class="enchantee__desserts__macaronnoisette--prix">18€</p>
+                    </div>
+                    <div class="enchantee__desserts__baba">
+                        <div class="enchantee__desserts__baba--texte">
+                        <p>Baba au rhum revisité</p>
+                        <p>Avec son coulis de citron</p>
+                        </div>
+                        <p class="enchantee__desserts__baba--prix">22€</p>
+                    </div>
+                    <div class="enchantee__desserts__tartecitron">
+                        <div class="enchantee__desserts__tartecitron--texte">
+                        <p>Tarte au citron meringuée</p>
+                        <p>Déstructurée</p>
+                        </div>
+                        <p class="enchantee__desserts__tartecitron--prix">23€ </p>
+                    </div>
+                </aside>
+
+                <button>
+                    <p>Commander</p>
+                </button>
+            </div>
         </section>
 
         <footer>

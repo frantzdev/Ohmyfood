@@ -477,4 +477,225 @@ footer ul .fa-hands-helping {
   font-weight: bold;
 }
 
+.enchantee {
+  background-color: #f6f6f6;
+}
+.enchantee__image {
+  width: 100%;
+}
+.enchantee__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.enchantee__carte {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -50px;
+}
+.enchantee__carte__head {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.enchantee__entrees {
+  padding: 10px;
+}
+.enchantee__entrees--titre {
+  padding: 10px;
+}
+.enchantee__entrees--titre p {
+  padding-bottom: 5px;
+}
+.enchantee__entrees--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.enchantee__entrees__ravioles {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__entrees__ravioles--texte {
+  padding: 10px;
+}
+.enchantee__entrees__ravioles--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__entrees__caviar {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__entrees__caviar--texte {
+  padding: 10px;
+}
+.enchantee__entrees__caviar--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__entrees__homard-espuma {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__entrees__homard-espuma--texte {
+  padding: 10px;
+}
+.enchantee__entrees__homard-espuma--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__entrees__canard-cuit {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__entrees__canard-cuit--texte {
+  padding: 10px;
+}
+.enchantee__entrees__canard-cuit--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__plats {
+  padding: 10px;
+}
+.enchantee__plats--titre {
+  padding: 10px;
+}
+.enchantee__plats--titre p {
+  padding-bottom: 5px;
+}
+.enchantee__plats--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.enchantee__plats__saintjacques {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__plats__saintjacques--texte {
+  padding: 10px;
+}
+.enchantee__plats__saintjacques--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__plats__langoustine {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__plats__langoustine--texte {
+  padding: 10px;
+}
+.enchantee__plats__langoustine--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__plats__queue {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__plats__queue--texte {
+  padding: 10px;
+}
+.enchantee__plats__queue--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__desserts {
+  padding: 10px;
+}
+.enchantee__desserts--titre {
+  padding: 10px;
+}
+.enchantee__desserts--titre p {
+  padding-bottom: 5px;
+}
+.enchantee__desserts--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.enchantee__desserts__macaronnoisette {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__desserts__macaronnoisette--texte {
+  padding: 10px;
+}
+.enchantee__desserts__macaronnoisette--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__desserts__baba {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__desserts__baba--texte {
+  padding: 10px;
+}
+.enchantee__desserts__baba--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.enchantee__desserts__tartecitron {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.enchantee__desserts__tartecitron--texte {
+  padding: 10px;
+}
+.enchantee__desserts__tartecitron--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./base/typography.scss";
 @import "./components/bouton.scss";
@@ -9,3 +10,4 @@
 
 
 @import "./pages/accueil.scss";
+@import "./pages/a_la_francaise"

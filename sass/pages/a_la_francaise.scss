@@ -1,0 +1,188 @@
+.background-francaise {
+    width: 100%;
+}
+
+.background-francaise img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.francaise {
+    background-color: $color-background;
+    border-radius: 40px 40px 0 0;
+
+    &--titre-menu {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.entrees {
+    padding: 10px;
+
+    &__titre {
+        padding: 10px;
+
+        & p {
+            padding-bottom: 5px;
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+    }
+
+    &__poulpe {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__veloute {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__soupe {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+.plats {
+    padding: 10px;
+
+    &__titre {
+        padding: 10px;
+
+        & p {
+            padding-bottom: 5px;
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+    }
+
+    &__coquilles {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__magret {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__pigeonneau {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+.desserts {
+    padding: 10px;
+
+    &__titre {
+        padding: 10px;
+
+        & p {
+            padding-bottom: 5px;
+        }
+
+        &--barre {
+            border: 2px solid #{$color-tertiary};
+            width: 40px;
+        }
+    }
+
+    &__violettes {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__fondant {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__millefeuille {
+        @include choix-assiette;
+
+        &--texte {
+            padding: 10px;
+        }
+
+        &--prix {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}

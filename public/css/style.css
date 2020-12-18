@@ -35,7 +35,7 @@ p {
   font-size: 1rem;
 }
 
-.footer--logo {
+.footer--logo, .francaise--titre-menu {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: bold;
@@ -275,9 +275,206 @@ footer ul .fa-hands-helping {
 .background-francaise {
   width: 100%;
 }
+
 .background-francaise img {
   width: 100%;
   object-fit: cover;
+}
+
+.francaise {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+}
+.francaise--titre-menu {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrees {
+  padding: 10px;
+}
+.entrees__titre {
+  padding: 10px;
+}
+.entrees__titre p {
+  padding-bottom: 5px;
+}
+.entrees__titre--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.entrees__poulpe {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.entrees__poulpe--texte {
+  padding: 10px;
+}
+.entrees__poulpe--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.entrees__veloute {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.entrees__veloute--texte {
+  padding: 10px;
+}
+.entrees__veloute--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.entrees__soupe {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.entrees__soupe--texte {
+  padding: 10px;
+}
+.entrees__soupe--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.plats {
+  padding: 10px;
+}
+.plats__titre {
+  padding: 10px;
+}
+.plats__titre p {
+  padding-bottom: 5px;
+}
+.plats__titre--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.plats__coquilles {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plats__coquilles--texte {
+  padding: 10px;
+}
+.plats__coquilles--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.plats__magret {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plats__magret--texte {
+  padding: 10px;
+}
+.plats__magret--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.plats__pigeonneau {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plats__pigeonneau--texte {
+  padding: 10px;
+}
+.plats__pigeonneau--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.desserts {
+  padding: 10px;
+}
+.desserts__titre {
+  padding: 10px;
+}
+.desserts__titre p {
+  padding-bottom: 5px;
+}
+.desserts__titre--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.desserts__violettes {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.desserts__violettes--texte {
+  padding: 10px;
+}
+.desserts__violettes--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.desserts__fondant {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.desserts__fondant--texte {
+  padding: 10px;
+}
+.desserts__fondant--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.desserts__millefeuille {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.desserts__millefeuille--texte {
+  padding: 10px;
+}
+.desserts__millefeuille--prix {
+  padding: 10px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

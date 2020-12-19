@@ -20,5 +20,10 @@ footer {
             padding-right: 5px;
             font-size: 9px;
         }
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }

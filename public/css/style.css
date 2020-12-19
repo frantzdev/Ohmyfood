@@ -88,6 +88,10 @@ footer ul .fa-hands-helping {
   padding-right: 5px;
   font-size: 9px;
 }
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
 
 .localisation {
   display: flex;
@@ -130,16 +134,15 @@ footer ul .fa-hands-helping {
   font-family: "roboto", sans-serif;
 }
 
-.fonctionnement h2 {
-  padding: 20px 0;
-}
-
 .fonctionnement {
   max-width: 375px;
   padding: 15px;
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+.fonctionnement h2 {
+  padding: 20px 0;
 }
 .fonctionnement__primary-choice {
   background-color: #f6f6f6;
@@ -150,6 +153,12 @@ footer ul .fa-hands-helping {
   align-items: center;
   border-radius: 20px;
   position: relative;
+}
+.fonctionnement__primary-choice:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__primary-choice:hover i {
+  color: #9356DC;
 }
 .fonctionnement__primary-choice__number_one {
   padding: 5px 10px;
@@ -176,6 +185,12 @@ footer ul .fa-hands-helping {
   border-radius: 20px;
   position: relative;
 }
+.fonctionnement__secondary-choice:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__secondary-choice:hover i {
+  color: #9356DC;
+}
 .fonctionnement__secondary-choice__number_two {
   padding: 5px 10px;
   background-color: #9356DC;
@@ -200,6 +215,12 @@ footer ul .fa-hands-helping {
   align-items: center;
   border-radius: 20px;
   position: relative;
+}
+.fonctionnement__tertiary-choice:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__tertiary-choice:hover i {
+  color: #9356DC;
 }
 .fonctionnement__tertiary-choice__number_three {
   padding: 5px 10px;

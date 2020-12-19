@@ -14,76 +14,106 @@
 <body>
     <div id="page">
         <header>
-            <div><i class="fas fa-arrow-left"></i><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood"></div>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood">
         </header>
 
-        <div><img src="/public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="une assiette de salade">
-        </div>
-        <section class="menu">
-            <h2>Le délice des sens<i class="fas fa-heart"></i></h2>
-            <aside class="entrees">
-                <p>Entrées</p>
-                <div class="progress"></div>
-                <div class="Tartare">
-                    <p>Tartare de thon</p>
-                    <p>Assaisonné au yuzu</p>
-                    <p>25€</p>
-                </div>
-                <div class="bouchee-homard">
-                    <p>Bouchée de homard croustillant</p>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35€</p>
-                </div>
-                <div class="cèpes">
-                    <p>Velouté de cèpes</p>
-                    <p>Aux truffes</p>
-                    <p>20€</p>
-                </div>
-            </aside>
 
-            <aside class="plats">
-                <p>Plats</p>
-                <div class="progress"></div>
-                <div class="poulet-roti">
-                    <p>Poulet rôti aux herbes de Provence</p>
-                    <p>Et sa crème de truffe</p>
-                    <p>40€</p>
+        <section class="delice">
+            <div class="delice__image">
+                <img src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="une assiette de delice">
+            </div>
+            <div class="delice__carte">
+                <div class="delice__carte__head">
+                    <h2>Le delice des sens</h2><span><i class="far fa-heart"></i></span>
                 </div>
-                <div class="langouste">
-                    <p>Langouste rôtie</p>
-                    <p>Et ses légumes de saison</p>
-                    <p>35€</p>
-                </div>
-                <div class="cote-de-boeuf">
-                    <p>Côte de boeuf Angus</p>
-                    <p>Et sa purée de panais</p>
-                    <p>44€</p>
-                </div>
-            </aside>
+                <aside class="delice__entrees">
+                    <div class="delice__entrees--titre">
+                        <p>Entrées</p>
+                        <div class="delice__entrees--barre"></div>
+                    </div>
+                    <div class="delice__entrees__tartare">
+                        <div class="delice__entrees__tartare--texte">
+                            <h3>Tartare de thon</h3>
+                            <p>Assaisonné au yuzu</p>
+                        </div>
+                        <p class="delice__entrees__tartare--prix">25€</p>
+                    </div>
+                    <div class="delice__entrees__bouchee">
+                        <div class="delice__entrees__bouchee--texte">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="delice__entrees__bouchee--prix">35€</p>
+                    </div>
+                    <div class="delice__entrees__cepes">
+                        <div class="delice__entrees__cepes--texte">
+                            <h3>Velouté de cèpes</h3>
+                            <p>Aux truffes</p>
+                        </div>
+                        <p class="delice__entrees__cepes--prix">20€</p>
+                    </div>
+                </aside>
 
-            <aside class="desserts">
-                <p>Desserts</p>
-                <div class="progress"></div>
-                <div class="farandole">
-                    <p>Farandole de desserts</p>
-                    <p>Du chef</p>
-                    <p>18€</p>
-                </div>
-                <div class="creme-brulee">
-                    <p>Crème brulée</p>
-                    <p>Revisitée</p>
-                    <p>22€</p>
-                </div>
-                <div class="tiramisu">
-                    <p>Tiramisu</p>
-                    <p>À la noisette</p>
-                    <p>23€ </p>
-                </div>
-            </aside>
-            
-            <button>
-                <p>Commander</p>
-            </button>
+                <aside class="delice__plats">
+                    <div class="delice__plats--titre">
+                        <p>Plats</p>
+                        <div class="delice__plats--barre"></div>
+                    </div>
+                    <div class="delice__plats__poulet">
+                        <div class="delice__plats__poulet--texte">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <p class="delice__plats__poulet--prix">40€</p>
+                    </div>
+                    <div class="delice__plats__langoustine-rotie">
+                        <div class="delice__plats__langoustine-rotie--texte">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+                        <p class="delice__plats__langoustine-rotie--prix">35€</p>
+                    </div>
+                    <div class="delice__plats__angus">
+                        <div class="delice__plats__angus--texte">
+                            <h3>Côte de boeuf Angus</h3>
+                            <p>Et sa purée de panais</p>
+                        </div>
+                        <p class="delice__plats__angus--prix">44€</p>
+                    </div>
+                </aside>
+
+                <aside class="delice__desserts">
+                    <div class="delice__desserts--titre">
+                        <p>Desserts</p>
+                        <div class="delice__desserts--barre"></div>
+                    </div>
+                    <div class="delice__desserts__farandole">
+                        <div class="delice__desserts__farandole--texte">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
+                        </div>
+                        <p class="delice__desserts__farandole--prix">18€</p>
+                    </div>
+                    <div class="delice__desserts__brulee">
+                        <div class="delice__desserts__brulee--texte">
+                            <h3>Crème brulée</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <p class="delice__desserts__brulee--prix">22€</p>
+                    </div>
+                    <div class="delice__desserts__tiramisu">
+                        <div class="delice__desserts__tiramisu--texte">
+                            <h3>Tiramisu</h3>
+                            <p>À la noisette</p>
+                        </div>
+                        <p class="delice__desserts__tiramisu--prix">23€ </p>
+                    </div>
+                </aside>
+
+                <button>
+                    <p>Commander</p>
+                </button>
 
         </section>
 

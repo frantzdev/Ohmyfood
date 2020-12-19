@@ -60,6 +60,9 @@ header .fas {
     font-size: x-large;
   }
 }
+header a {
+  color: black;
+}
 
 footer {
   padding: 20px;
@@ -694,6 +697,416 @@ footer ul .fa-hands-helping {
   padding: 10px;
 }
 .enchantee__desserts__tartecitron--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.delice {
+  background-color: #f6f6f6;
+}
+.delice__image {
+  width: 100%;
+}
+.delice__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.delice__carte {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -50px;
+}
+.delice__carte__head {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.delice__entrees {
+  padding: 10px;
+}
+.delice__entrees--titre {
+  padding: 10px;
+}
+.delice__entrees--titre p {
+  padding-bottom: 5px;
+}
+.delice__entrees--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.delice__entrees__tartare {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__entrees__tartare--texte {
+  padding: 10px;
+}
+.delice__entrees__tartare--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__entrees__bouchee {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__entrees__bouchee--texte {
+  padding: 10px;
+}
+.delice__entrees__bouchee--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__entrees__cepes {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__entrees__cepes--texte {
+  padding: 10px;
+}
+.delice__entrees__cepes--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__plats {
+  padding: 10px;
+}
+.delice__plats--titre {
+  padding: 10px;
+}
+.delice__plats--titre p {
+  padding-bottom: 5px;
+}
+.delice__plats--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.delice__plats__poulet {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__plats__poulet--texte {
+  padding: 10px;
+}
+.delice__plats__poulet--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__plats__langoustine-rotie {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__plats__langoustine-rotie--texte {
+  padding: 10px;
+}
+.delice__plats__langoustine-rotie--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__plats__angus {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__plats__angus--texte {
+  padding: 10px;
+}
+.delice__plats__angus--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__desserts {
+  padding: 10px;
+}
+.delice__desserts--titre {
+  padding: 10px;
+}
+.delice__desserts--titre p {
+  padding-bottom: 5px;
+}
+.delice__desserts--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.delice__desserts__farandole {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__desserts__farandole--texte {
+  padding: 10px;
+}
+.delice__desserts__farandole--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__desserts__brulee {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__desserts__brulee--texte {
+  padding: 10px;
+}
+.delice__desserts__brulee--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.delice__desserts__tiramisu {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.delice__desserts__tiramisu--texte {
+  padding: 10px;
+}
+.delice__desserts__tiramisu--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.palette {
+  background-color: #f6f6f6;
+}
+.palette__image {
+  width: 100%;
+}
+.palette__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.palette__carte {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -50px;
+}
+.palette__carte__head {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.palette__entrees {
+  padding: 10px;
+}
+.palette__entrees--titre {
+  padding: 10px;
+}
+.palette__entrees--titre p {
+  padding-bottom: 5px;
+}
+.palette__entrees--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.palette__entrees__escargot {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__entrees__escargot--texte {
+  padding: 10px;
+}
+.palette__entrees__escargot--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__entrees__foiegras {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__entrees__foiegras--texte {
+  padding: 10px;
+}
+.palette__entrees__foiegras--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__entrees__oeuf {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__entrees__oeuf--texte {
+  padding: 10px;
+}
+.palette__entrees__oeuf--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__plats {
+  padding: 10px;
+}
+.palette__plats--titre {
+  padding: 10px;
+}
+.palette__plats--titre p {
+  padding-bottom: 5px;
+}
+.palette__plats--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.palette__plats__herbes {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__plats__herbes--texte {
+  padding: 10px;
+}
+.palette__plats__herbes--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__plats__parmentier {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__plats__parmentier--texte {
+  padding: 10px;
+}
+.palette__plats__parmentier--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__plats__turbot {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__plats__turbot--texte {
+  padding: 10px;
+}
+.palette__plats__turbot--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__desserts {
+  padding: 10px;
+}
+.palette__desserts--titre {
+  padding: 10px;
+}
+.palette__desserts--titre p {
+  padding-bottom: 5px;
+}
+.palette__desserts--barre {
+  border: 2px solid #99E2D0;
+  width: 40px;
+}
+.palette__desserts__parisbrest {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__desserts__parisbrest--texte {
+  padding: 10px;
+}
+.palette__desserts__parisbrest--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__desserts__chocolat {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__desserts__chocolat--texte {
+  padding: 10px;
+}
+.palette__desserts__chocolat--prix {
+  padding: 10px;
+  font-weight: bold;
+}
+.palette__desserts__mousse {
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.palette__desserts__mousse--texte {
+  padding: 10px;
+}
+.palette__desserts__mousse--prix {
   padding: 10px;
   font-weight: bold;
 }

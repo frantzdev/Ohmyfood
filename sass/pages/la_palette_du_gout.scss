@@ -1,4 +1,4 @@
-.delice {
+.palette {
     background-color: $color-background;
 
     &__image {
@@ -40,7 +40,7 @@
             width: 40px;
         }
 
-        &__tartare {
+        &__escargot {
             @include choix-assiette;
 
             &--texte {
@@ -53,7 +53,7 @@
             }
         }
 
-        &__bouchee {
+        &__foiegras {
             @include choix-assiette;
 
             &--texte {
@@ -66,7 +66,7 @@
             }
         }
 
-        &__cepes {
+        &__oeuf {
             @include choix-assiette;
 
             &--texte {
@@ -96,7 +96,7 @@
             width: 40px;
         }
 
-        &__poulet {
+        &__herbes {
             @include choix-assiette;
 
             &--texte {
@@ -109,7 +109,7 @@
             }
         }
 
-        &__langoustine-rotie {
+        &__parmentier {
             @include choix-assiette;
 
             &--texte {
@@ -122,7 +122,7 @@
             }
         }
 
-        &__angus {
+        &__turbot {
             @include choix-assiette;
 
             &--texte {
@@ -152,7 +152,7 @@
             width: 40px;
         }
 
-        &__farandole {
+        &__parisbrest {
             @include choix-assiette;
 
             &--texte {
@@ -165,7 +165,7 @@
             }
         }
 
-        &__brulee {
+        &__chocolat {
             @include choix-assiette;
 
             &--texte {
@@ -178,7 +178,7 @@
             }
         }
 
-        &__tiramisu {
+        &__mousse {
             @include choix-assiette;
 
             &--texte {

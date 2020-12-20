@@ -72,9 +72,10 @@ footer {
 footer ul {
   list-style-type: none;
 }
-@media all and (min-width: 400px) {
+@media all and (min-width: 768px) {
   footer ul {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 }
 footer ul li {
@@ -93,13 +94,27 @@ footer ul a {
   color: white;
 }
 
-.localisation {
+@media all and (min-width: 1024px) {
+  .accueil {
+    display: flex;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+}
+.head__localisation {
   display: flex;
   flex-direction: column;
   background: #f6f6f6;
   font-family: "roboto", sans-serif;
 }
-.localisation__map {
+.head__localisation__map {
   font-size: 1.1rem;
   padding: 15px;
   background-color: #eaeaea;
@@ -107,44 +122,54 @@ footer ul a {
   display: flex;
   justify-content: flex-start;
 }
-.localisation__map i {
+.head__localisation__map i {
   padding-left: 90px;
 }
-.localisation__map__texte {
+.head__localisation__map--texte {
   padding-left: 15px;
   font-weight: bold;
 }
-.localisation__presentation {
+.head__localisation__presentation {
   padding: 50px 35px;
   text-align: center;
 }
-.localisation__presentation__texte {
+.head__localisation__presentation p {
   padding: 10px 10px 20px 10px;
 }
-.localisation__button {
+.head__localisation__button {
+  margin-top: 20px;
   padding: 15px;
   border-radius: 50px;
   border: 2px solid darkorchid;
   background: darkorchid;
   box-shadow: 0px 5px 5px #b9b7b7;
 }
-.localisation__button p {
+.head__localisation__button p {
   color: white;
   font-size: 0.9rem;
   font-family: "roboto", sans-serif;
 }
 
-.fonctionnement {
+.head__fonctionnement {
   max-width: 375px;
   padding: 15px;
-  margin: auto;
   display: flex;
   flex-direction: column;
 }
-.fonctionnement h2 {
+@media all and (min-width: 700px) {
+  .head__fonctionnement {
+    margin: auto;
+  }
+}
+.head__fonctionnement h2 {
   padding: 20px 0;
 }
-.fonctionnement__primary-choice {
+@media all and (min-width: 700px) {
+  .head__fonctionnement h2 {
+    padding: 20px 70px;
+  }
+}
+.head__fonctionnement__primary-choice {
   background-color: #f6f6f6;
   padding: 30px;
   margin: 10px;
@@ -154,13 +179,13 @@ footer ul a {
   border-radius: 20px;
   position: relative;
 }
-.fonctionnement__primary-choice:hover {
+.head__fonctionnement__primary-choice:hover {
   background-color: #f5edff;
 }
-.fonctionnement__primary-choice:hover i {
+.head__fonctionnement__primary-choice:hover i {
   color: #9356DC;
 }
-.fonctionnement__primary-choice__number_one {
+.head__fonctionnement__primary-choice--number_one {
   padding: 5px 10px;
   background-color: #9356DC;
   color: white;
@@ -168,14 +193,14 @@ footer ul a {
   position: absolute;
   left: -12px;
 }
-.fonctionnement__primary-choice i {
+.head__fonctionnement__primary-choice i {
   padding: 0 10px;
   color: grey;
 }
-.fonctionnement__primary-choice h3 {
+.head__fonctionnement__primary-choice h3 {
   padding: 0 20px;
 }
-.fonctionnement__secondary-choice {
+.head__fonctionnement__secondary-choice {
   background-color: #f6f6f6;
   padding: 30px;
   margin: 10px;
@@ -185,13 +210,13 @@ footer ul a {
   border-radius: 20px;
   position: relative;
 }
-.fonctionnement__secondary-choice:hover {
+.head__fonctionnement__secondary-choice:hover {
   background-color: #f5edff;
 }
-.fonctionnement__secondary-choice:hover i {
+.head__fonctionnement__secondary-choice:hover i {
   color: #9356DC;
 }
-.fonctionnement__secondary-choice__number_two {
+.head__fonctionnement__secondary-choice--number_two {
   padding: 5px 10px;
   background-color: #9356DC;
   color: white;
@@ -199,14 +224,14 @@ footer ul a {
   position: absolute;
   left: -12px;
 }
-.fonctionnement__secondary-choice i {
+.head__fonctionnement__secondary-choice i {
   padding: 0 10px;
   color: grey;
 }
-.fonctionnement__secondary-choice h3 {
+.head__fonctionnement__secondary-choice h3 {
   padding: 0 20px;
 }
-.fonctionnement__tertiary-choice {
+.head__fonctionnement__tertiary-choice {
   background-color: #f6f6f6;
   padding: 30px;
   margin: 10px;
@@ -216,13 +241,13 @@ footer ul a {
   border-radius: 20px;
   position: relative;
 }
-.fonctionnement__tertiary-choice:hover {
+.head__fonctionnement__tertiary-choice:hover {
   background-color: #f5edff;
 }
-.fonctionnement__tertiary-choice:hover i {
+.head__fonctionnement__tertiary-choice:hover i {
   color: #9356DC;
 }
-.fonctionnement__tertiary-choice__number_three {
+.head__fonctionnement__tertiary-choice--number_three {
   padding: 5px 10px;
   background-color: #9356DC;
   color: white;
@@ -230,11 +255,11 @@ footer ul a {
   position: absolute;
   left: -12px;
 }
-.fonctionnement__tertiary-choice i {
+.head__fonctionnement__tertiary-choice i {
   padding: 0 10px;
   color: grey;
 }
-.fonctionnement__tertiary-choice h3 {
+.head__fonctionnement__tertiary-choice h3 {
   padding: 0 20px;
 }
 
@@ -244,18 +269,28 @@ footer ul a {
   flex-direction: column;
   background-color: #f6f6f6;
 }
+@media all and (min-width: 1024px) {
+  .menu {
+    margin: 15px 10px;
+    justify-content: space-evenly;
+  }
+}
 .menu h2 {
   padding-bottom: 10px;
 }
-
+@media all and (min-width: 768px) {
+  .menu h2 {
+    text-align: center;
+  }
+}
 @media all and (min-width: 440px) {
-  .container {
+  .menu .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
-.container__carte {
+.menu .container__carte {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -264,19 +299,24 @@ footer ul a {
   margin: 10px;
 }
 @media all and (min-width: 400px) {
-  .container__carte {
-    max-width: 400px;
+  .menu .container__carte {
+    max-width: 500px;
   }
 }
-.container__carte--photo {
+@media all and (min-width: 1270px) {
+  .menu .container__carte {
+    max-width: 350px;
+  }
+}
+.menu .container__carte--photo {
   height: 175px;
   display: flex;
 }
-.container__carte--photo img {
+.menu .container__carte--photo img {
   width: 100%;
   object-fit: cover;
 }
-.container__carte__description {
+.menu .container__carte__description {
   background-color: white;
   padding: 10px;
   display: flex;
@@ -284,7 +324,7 @@ footer ul a {
   align-items: center;
   position: relative;
 }
-.container__carte__description span {
+.menu .container__carte__description span {
   padding: 5px;
   background-color: #99E2D0;
   color: darkgreen;
@@ -292,7 +332,7 @@ footer ul a {
   right: 15px;
   bottom: 185px;
 }
-.container__carte__description i {
+.menu .container__carte__description i {
   padding-right: 10px;
 }
 

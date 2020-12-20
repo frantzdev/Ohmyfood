@@ -4,8 +4,9 @@ footer {
     color: white;
     & ul {
         list-style-type: none;
-        @media all and ( min-width: 400px) {
-            text-align: center;
+        @media all and ( min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
         }
         & li {
             padding: 5px 0;

@@ -43,16 +43,27 @@ header {
   align-items: center;
   position: relative;
 }
+@media all and (min-width: 769px) {
+  header {
+    padding: 50px;
+  }
+}
 header img {
   width: 50%;
 }
 header .fas {
   position: absolute;
   left: 20px;
+  top: 40%;
 }
-@media all and (min-width: 769px) {
+@media all and (min-width: 768px) {
   header .fas {
-    font-size: x-large;
+    font-size: xx-large;
+  }
+}
+@media all and (min-width: 1204px) {
+  header .fas {
+    font-size: xxx-large;
   }
 }
 header a {
@@ -365,25 +376,31 @@ footer ul a {
   object-fit: cover;
 }
 
-.palette {
+.francaise {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   overflow: overlay;
 }
 @media all and (min-width: 1025px) {
-  .palette {
+  .francaise {
     margin-top: unset;
     overflow: unset;
   }
 }
-.palette__titre {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: bold;
+.francaise__titre {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+.francaise__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+.francaise__titre i {
+  padding-right: 20px;
+  font-size: 2rem;
 }
 
 .choix {
@@ -583,15 +600,15 @@ footer ul a {
   }
 }
 
-.image {
+.enchantee-image {
   width: 100%;
 }
 @media all and (min-width: 1025px) {
-  .image {
+  .enchantee-image {
     width: unset;
   }
 }
-.image img {
+.enchantee-image img {
   width: 100%;
   object-fit: cover;
 }
@@ -609,12 +626,19 @@ footer ul a {
   }
 }
 .enchantee__titre {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: bold;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.enchantee__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+.enchantee__titre i {
+  padding-right: 20px;
+  font-size: 2rem;
 }
 
 .choix {
@@ -856,12 +880,18 @@ footer ul a {
   }
 }
 .delice__titre {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: bold;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+.delice__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+.delice__titre i {
+  padding-right: 20px;
+  font-size: 2rem;
 }
 
 .choix {
@@ -1067,32 +1097,45 @@ footer ul a {
 @media all and (min-width: 1025px) {
   .image {
     width: unset;
+    /* pour placer l'image */
   }
 }
 .image img {
   width: 100%;
   object-fit: cover;
 }
+@media all and (min-width: 1025px) {
+  .image img {
+    width: 99%;
+    border-radius: 40px;
+  }
+}
 
-.francaise {
+.palette {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   overflow: overlay;
 }
 @media all and (min-width: 1025px) {
-  .francaise {
+  .palette {
     margin-top: unset;
     overflow: unset;
   }
 }
-.francaise__titre {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: bold;
+.palette__titre {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+.palette__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+.palette__titre i {
+  padding-right: 20px;
+  font-size: 2rem;
 }
 
 .choix {

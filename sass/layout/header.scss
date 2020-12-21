@@ -4,6 +4,9 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    @media all and ( min-width: 769px) {
+        padding: 50px;
+    }
 
     & img {
         width: 50%;
@@ -12,9 +15,14 @@ header {
     & .fas {
         position: absolute;
         left: 20px;
+        top: 40%;
 
-        @media all and (min-width: 769px) {
-            font-size: x-large;
+        @media all and (min-width: 768px) {
+            font-size: xx-large;
+        }
+
+        @media all and ( min-width: 1204px) {
+            font-size: xxx-large;
         }
     }
 

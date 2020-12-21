@@ -4,7 +4,7 @@
     }
 }
 
-.image {
+.enchantee-image {
     width: 100%;
 
     @media all and (min-width: 1025px) {
@@ -31,10 +31,17 @@
 
 
     &__titre {
-        @include shrikhand;
         padding: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        & h2 {
+            @include shrikhand;
+        }
+        & i {
+            padding-right: 20px;
+            font-size: 2rem;
+        }
     }
 }
 

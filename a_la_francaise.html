@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Shrikhand & display = swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
 
     <title>Menu À la française</title>
@@ -14,112 +18,117 @@
 <body>
     <div id="page">
         <header>
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a><img src="public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a><img src="public/img/logo/ohmyfood@2x.svg"
+                alt="logo ohmyfood">
         </header>
 
-        <section class="francaise">
-            <div class="francaise__image">
+        <div class="photo-menu">
+            <div class="image">
                 <img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="une assiette à la française">
             </div>
-            <div class="francaise__carte">
-                <div class="francaise__carte__head">
+
+            <main class="francaise">
+                <div class="francaise__titre">
                     <h2>À la française</h2><span><i class="far fa-heart"></i></span>
                 </div>
-                <aside class="francaise__entrees">
-                    <div class="francaise__entrees--titre">
-                        <p>Entrées</p>
-                        <div class="francaise__entrees--barre"></div>
-                    </div>
-                    <div class="francaise__entrees__poulpe">
-                        <div class="francaise__entrees__poulpe--texte">
-                            <h3>Tartare de poulpe acidulé</h3>
-                            <p>Aux zestes d'orange</p>
+                <div class="choix">
+                    <section class="choix__entrees">
+                        <div class="choix__entrees--titre">
+                            <p>Entrées</p>
+                            <div class="choix__entrees--barre"></div>
                         </div>
-                        <p class="francaise__entrees__poulpe--prix">25€</p>
-                    </div>
-                    <div class="francaise__entrees__veloute">
-                        <div class="francaise__entrees__veloute--texte">
-                            <h3>Velouté de légumes d'antan</h3>
-                            <p>Carotte, panais, topinambour</p>
+                        <div class="choix__entrees__poulpe">
+                            <div class="choix__entrees__poulpe--texte">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <p class="choix__entrees__poulpe--prix">25€</p>
                         </div>
-                        <p class="francaise__entrees__veloute--prix">35€</p>
-                    </div>
-                    <div class="francaise__entrees__soupe">
-                        <div class="francaise__entrees__soupe--texte">
-                            <h3>Soupe à l'oignon</h3>
-                            <p>Revisitée</p>
+                        <div class="choix__entrees__veloute">
+                            <div class="choix__entrees__veloute--texte">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <p class="choix__entrees__veloute--prix">35€</p>
                         </div>
-                        <p class="francaise__entrees__soupe--prix">20€</p>
-                    </div>
-                </aside>
+                        <div class="choix__entrees__soupe">
+                            <div class="choix__entrees__soupe--texte">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <p class="choix__entrees__soupe--prix">20€</p>
+                        </div>
+                    </section>
 
-                <aside class="francaise__plats">
-                    <div class="francaise__plats--titre">
-                        <p>Plats</p>
-                        <div class="francaise__plats--barre"></div>
-                    </div>
-                    <div class="francaise__plats__coquilles">
-                        <div class="francaise__plats__coquilles--texte">
-                            <h3>Coquilles Saint-Jacques</h3>
-                            <p>Accompagnées d'une purée de panais</p>
+                    <section class="choix__plats">
+                        <div class="choix__plats--titre">
+                            <p>Plats</p>
+                            <div class="choix__plats--barre"></div>
                         </div>
-                        <p class="francaise__plats__coquilles--prix">40€</p>
-                    </div>
-                    <div class="francaise__plats__magret">
-                        <div class="francaise__plats__magret--texte">
-                            <h3>Magret de canard</h3>
-                            <p>Et parmentier de pommes de terre</p>
+                        <div class="choix__plats__coquilles">
+                            <div class="choix__plats__coquilles--texte">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <p class="choix__plats__coquilles--prix">40€</p>
                         </div>
-                        <p class="francaise__plats__magret--prix">35€</p>
-                    </div>
-                    <div class="francaise__plats__pigeonneau">
-                        <div class="francaise__plats__pigeonneau--texte">
-                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                            <p>Sur son lit de gnocchis aux légumes</p>
+                        <div class="choix__plats__magret">
+                            <div class="choix__plats__magret--texte">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <p class="choix__plats__magret--prix">35€</p>
                         </div>
-                        <p class="francaise__plats__pigeonneau--prix">44€</p>
-                    </div>
-                </aside>
+                        <div class="choix__plats__pigeonneau">
+                            <div class="choix__plats__pigeonneau--texte">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <p class="choix__plats__pigeonneau--prix">44€</p>
+                        </div>
+                    </section>
 
-                <aside class="francaise__desserts">
-                    <div class="francaise__plats--titre">
-                        <p>Desserts</p>
-                        <div class="francaise__desserts--barre"></div>
-                    </div>
-                    <div class="francaise__desserts__violettes">
-                        <div class="francaise__desserts__violettes--texte">
-                            <h3>Pétales de violettes glacés</h3>
-                            <p>Et purée de noisettes</p>
+                    <section class="choix__desserts">
+                        <div class="choix__plats--titre">
+                            <p>Desserts</p>
+                            <div class="choix__desserts--barre"></div>
                         </div>
-                        <p class="francaise__desserts__violettes--prix">18€</p>
-                    </div>
-                    <div class="francaise__desserts__fondant">
-                        <div class="francaise__desserts__fondant--texte">
-                            <h3>Fondant au chocolat</h3>
-                            <p>Revisité</p>
+                        <div class="choix__desserts__violettes">
+                            <div class="choix__desserts__violettes--texte">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
+                            </div>
+                            <p class="choix__desserts__violettes--prix">18€</p>
                         </div>
-                        <p class="francaise__desserts__fondant--prix">22€</p>
-                    </div>
-                    <div class="francaise__desserts__millefeuille">
-                        <div class="francaise__desserts__millefeuille--texte">
-                            <h3>Millefeuille croustillant</h3>
-                            <p>Myrtilles et pâte d’amande</p>
+                        <div class="choix__desserts__fondant">
+                            <div class="choix__desserts__fondant--texte">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="choix__desserts__fondant--prix">22€</p>
                         </div>
-                        <p class="francaise__desserts__millefeuille--prix">23€ </p>
-                    </div>
-                </aside>
+                        <div class="choix__desserts__millefeuille">
+                            <div class="choix__desserts__millefeuille--texte">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d’amande</p>
+                            </div>
+                            <p class="choix__desserts__millefeuille--prix">23€ </p>
+                        </div>
+                    </section>
 
-                <button>
-                    <p>Commander</p>
-                </button>
-            </div>
-        </section>
+                    <button>
+                        <p>Commander</p>
+                    </button>
+                </div>
+            </main>
+        </div>
+
 
         <footer>
             <nav>
                 <ul>
-                    <li>ohmyfood</li>
+                    <li class="footer--logo">ohmyfood</li>
                     <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
                     <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
                     <li>Mention légales</li>

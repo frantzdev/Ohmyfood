@@ -8,3 +8,13 @@
         justify-content: space-between;
         align-items: flex-end;
 }
+
+@mixin roboto {
+        font-family: 'roboto', sans-serif;
+}
+
+@mixin shrikhand {
+        font-family: 'Shrikhand', cursive;
+        font-style: italic;
+        font-weight: bold;
+}

@@ -1,24 +1,19 @@
-h1 {
-    font-family: 'roboto', sans-serif;
+h1, h2 {
+    @include roboto;
     font-size: 1.5rem;
 }
 
-h2 {
-    font-family: 'roboto', sans-serif;
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-family: 'roboto', sans-serif;
+h3, p {
+    @include roboto;
     font-size: 1rem;
 }
 
-p {
-    font-size: 1rem; 
-}
-
-.footer--logo, .francaise--titre-menu {
+.footer--logo {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
     font-weight: bold;
+}
+
+li {
+    @include roboto;
 }

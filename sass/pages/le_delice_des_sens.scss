@@ -1,34 +1,55 @@
+.photo-menu {
+    @media all and (min-width: 1025px) {
+        display: flex;
+    }
+}
+
+.image {
+    width: 100%;
+
+    @media all and (min-width: 1025px) {
+        width: unset;
+    }
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
 .delice {
     background-color: $color-background;
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+    overflow: overlay;
 
-    &__image {
-        width: 100%;
-
-        & img {
-            width: 100%;
-            object-fit: cover;
-        }
+    @media all and (min-width: 1025px) {
+        margin-top: unset;
+        overflow: unset;
     }
 
-    &__carte {
-        background-color: $color-background;
-        border-radius: 40px 40px 0 0;
-        position: relative;
-        top: -50px;
-
-        &__head {
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
+    &__titre {
+        @include shrikhand;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
     }
+}
+
+.choix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 
     &__entrees {
         padding: 10px;
+        min-width: 355px;
 
         &--titre {
             padding: 10px;
+            text-transform: uppercase;
 
             & p {
                 padding-bottom: 5px;

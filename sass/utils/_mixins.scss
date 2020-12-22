@@ -20,9 +20,11 @@
 
 
 @mixin bouton {
+        font-family: 'roboto', sans-serif;
         border-radius: 50px;
         border: 2px solid $color-primary;
-        background: $color-primary;
+        background-color: $color-primary;
         color: white;
-        box-shadow: 0px 5px 5px rgb(185, 183, 183);
+        box-shadow: 0px 5px 5px rgba($color: #c5c5c5, $alpha: 0.7);
+        transition: background-color 1000ms , border-color 1000ms, box-shadow 1000ms 500ms;
 }

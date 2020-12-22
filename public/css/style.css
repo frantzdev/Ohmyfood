@@ -37,11 +37,18 @@ li {
 }
 
 button {
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
+}
+button:hover {
+  background-color: #ae80e5;
+  border-color: #ae80e5;
+  box-shadow: 0px 5px 5px #797979;
 }
 
 header {
@@ -162,11 +169,13 @@ footer ul a {
 .head__localisation__button {
   margin-top: 10px;
   padding: 15px 30px;
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1024px) {
@@ -604,20 +613,22 @@ footer ul a {
   padding: 10px;
   font-weight: bold;
 }
-.choix__button {
+.choix__container {
   min-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0 50px 0;
 }
-.choix__button button {
+.choix__container__button {
   padding: 15px 55px;
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -873,20 +884,22 @@ footer ul a {
   padding: 10px;
   font-weight: bold;
 }
-.choix__button {
+.choix__container {
   min-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0 50px 0;
 }
-.choix__button button {
+.choix__container__button {
   padding: 15px 55px;
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -1125,20 +1138,22 @@ footer ul a {
   padding: 10px;
   font-weight: bold;
 }
-.choix__button {
+.choix__container {
   min-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0 50px 0;
 }
-.choix__button button {
+.choix__container__button {
   padding: 15px 55px;
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -1388,20 +1403,22 @@ footer ul a {
   padding: 10px;
   font-weight: bold;
 }
-.choix__button {
+.choix__container {
   min-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0 50px 0;
 }
-.choix__button button {
+.choix__container__button {
   padding: 15px 55px;
+  font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
-  background: #9356DC;
+  background-color: #9356DC;
   color: white;
-  box-shadow: 0px 5px 5px #b9b7b7;
+  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
+  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
 button {
     @include bouton;
+    &:hover {
+        background-color: lighten($color: $color-primary, $amount: 10);
+        border-color: lighten($color: $color-primary, $amount: 10);
+        box-shadow: 0px 5px 5px darken(rgba($color: #c5c5c5, $alpha: 1), $amount: 30);
+    }
 }

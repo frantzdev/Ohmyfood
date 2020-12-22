@@ -235,14 +235,14 @@
         }
     }
 
-    &__button {
+    &__container {
         min-width: 375px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 40px 0 50px 0;
 
-        & button {
+        &__button {
             padding: 15px 55px;
             @include bouton;
         }

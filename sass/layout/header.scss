@@ -18,11 +18,12 @@ header {
         top: 40%;
 
         @media all and (min-width: 768px) {
-            font-size: xx-large;
+            font-size: x-large;
+            top: 45%;
         }
 
-        @media all and ( min-width: 1204px) {
-            font-size: xxx-large;
+        @media all and ( min-width: 1024px) {
+            font-size: xx-large;
         }
     }
 

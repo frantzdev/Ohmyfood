@@ -14,7 +14,7 @@
         box-shadow: 0px 0px 5px grey;
         border-radius: 20px;
         overflow: hidden;
-        
+
     }
 
     &__localisation {
@@ -51,18 +51,9 @@
         }
 
         &__button {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 50px;
-            border: 2px solid darkorchid;
-            background: darkorchid;
-            box-shadow: 0px 5px 5px rgb(185, 183, 183);
-
-            & p {
-                color: white;
-                font-size: 0.9rem;
-                font-family: 'roboto', sans-serif;
-            }
+            margin-top: 10px;
+            padding: 15px 30px;
+            @include bouton;
         }
     }
 }
@@ -215,7 +206,8 @@
     background-color: $color-background;
 
     @media all and (min-width: 1024px) {
-        margin: 20px 10px;
+        padding: 50px 0px;
+        margin: 20px 20px;
         justify-content: space-evenly;
         box-shadow: 0px 0px 5px grey;
         border-radius: 20px;
@@ -248,7 +240,7 @@
                 max-width: 500px;
             }
 
-            @media all and ( min-width: 1024px) {
+            @media all and (min-width: 1024px) {
                 max-width: 400px;
             }
 

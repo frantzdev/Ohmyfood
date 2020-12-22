@@ -8,12 +8,14 @@
     width: 100%;
 
     @media all and (min-width: 1025px) {
-        width: unset;        /* pour placer l'image */
+        width: unset;
+        /* pour placer l'image */
     }
 
     & img {
         width: 100%;
         object-fit: cover;
+
         @media all and (min-width: 1025px) {
             width: 99%;
             border-radius: 40px;
@@ -38,9 +40,11 @@
         padding: 20px;
         display: flex;
         justify-content: space-between;
+
         & h2 {
             @include shrikhand;
         }
+
         & i {
             padding-right: 20px;
             font-size: 2rem;
@@ -227,4 +231,16 @@
         }
     }
 
+    &__button {
+        min-width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0 50px 0;
+
+        & button {
+            padding: 15px 55px;
+            @include bouton;
+        }
+    }
 }

@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        animation: menu 4s;
 }
 
 @mixin roboto {

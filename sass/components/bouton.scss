@@ -6,3 +6,17 @@ button {
         box-shadow: 0px 5px 5px darken(rgba($color: #c5c5c5, $alpha: 1), $amount: 30);
     }
 }
+
+
+            
+@keyframes menu {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}

@@ -51,6 +51,16 @@ button:hover {
   box-shadow: 0px 5px 5px #797979;
 }
 
+@keyframes menu {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 header {
   padding: 15px;
   display: flex;
@@ -451,6 +461,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__poulpe--texte {
   padding: 10px;
@@ -467,6 +478,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__veloute--texte {
   padding: 10px;
@@ -483,6 +495,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__soupe--texte {
   padding: 10px;
@@ -512,6 +525,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__coquilles--texte {
   padding: 10px;
@@ -528,6 +542,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__magret--texte {
   padding: 10px;
@@ -544,6 +559,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__pigeonneau--texte {
   padding: 10px;
@@ -573,6 +589,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__violettes--texte {
   padding: 10px;
@@ -589,6 +606,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__fondant--texte {
   padding: 10px;
@@ -605,6 +623,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__millefeuille--texte {
   padding: 10px;
@@ -706,6 +725,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__ravioles--texte {
   padding: 10px;
@@ -722,6 +742,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__caviar--texte {
   padding: 10px;
@@ -738,6 +759,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__homard-espuma--texte {
   padding: 10px;
@@ -754,6 +776,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__canard-cuit--texte {
   padding: 10px;
@@ -783,6 +806,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__saintjacques--texte {
   padding: 10px;
@@ -799,6 +823,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__langoustine--texte {
   padding: 10px;
@@ -815,6 +840,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__queue--texte {
   padding: 10px;
@@ -844,6 +870,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__macaronnoisette--texte {
   padding: 10px;
@@ -860,6 +887,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__baba--texte {
   padding: 10px;
@@ -876,6 +904,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__tartecitron--texte {
   padding: 10px;
@@ -976,6 +1005,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__tartare--texte {
   padding: 10px;
@@ -992,6 +1022,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__bouchee--texte {
   padding: 10px;
@@ -1008,6 +1039,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__cepes--texte {
   padding: 10px;
@@ -1037,6 +1069,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__poulet--texte {
   padding: 10px;
@@ -1053,6 +1086,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__langoustine-rotie--texte {
   padding: 10px;
@@ -1069,6 +1103,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__angus--texte {
   padding: 10px;
@@ -1098,6 +1133,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__farandole--texte {
   padding: 10px;
@@ -1114,6 +1150,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__brulee--texte {
   padding: 10px;
@@ -1130,6 +1167,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__tiramisu--texte {
   padding: 10px;
@@ -1237,6 +1275,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__escargot--texte {
   padding: 10px;
@@ -1253,6 +1292,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__foiegras--texte {
   padding: 10px;
@@ -1269,6 +1309,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__entrees__oeuf--texte {
   padding: 10px;
@@ -1300,6 +1341,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__herbes--texte {
   padding: 10px;
@@ -1316,6 +1358,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__parmentier--texte {
   padding: 10px;
@@ -1332,6 +1375,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__plats__turbot--texte {
   padding: 10px;
@@ -1363,6 +1407,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__parisbrest--texte {
   padding: 10px;
@@ -1379,6 +1424,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__chocolat--texte {
   padding: 10px;
@@ -1395,6 +1441,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  animation: menu 4s;
 }
 .choix__desserts__mousse--texte {
   padding: 10px;

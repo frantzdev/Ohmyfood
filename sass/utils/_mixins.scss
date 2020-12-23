@@ -25,7 +25,32 @@
         border-radius: 50px;
         border: 2px solid $color-primary;
         background-color: $color-primary;
+        box-shadow: 0 2px 2px grey;
         color: white;
-        box-shadow: 0px 5px 5px rgba($color: #c5c5c5, $alpha: 0.7);
-        transition: background-color 1000ms , border-color 1000ms, box-shadow 1000ms 500ms;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        &:hover {
+                &::after {
+                        opacity: 1;
+                }
+        }
+
+        &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border-radius: 50px;
+                border: 2px solid lighten($color-primary, 10);
+                background-color: lighten($color-primary, 10);    
+                box-shadow: 0 2px 2px darken($color-primary, 50);
+                opacity: 0;
+                z-index: -1;
+                transition: opacity 500ms 150ms;
+        }
+
+
 }

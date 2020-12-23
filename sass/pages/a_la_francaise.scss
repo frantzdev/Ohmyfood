@@ -31,13 +31,15 @@
 
 
     &__titre {
-        
+
         padding: 20px;
         display: flex;
         justify-content: space-between;
+
         & h2 {
             @include shrikhand;
         }
+
         & i {
             padding-right: 20px;
             font-size: 2rem;
@@ -229,7 +231,6 @@
 
         &__button {
             padding: 15px 55px;
-            @include bouton;
         }
     }
 }

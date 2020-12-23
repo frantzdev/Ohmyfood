@@ -36,19 +36,34 @@ li {
   font-family: "roboto", sans-serif;
 }
 
-button {
+.choix__container__button, .head__localisation__button {
   font-family: "roboto", sans-serif;
   border-radius: 50px;
   border: 2px solid #9356DC;
   background-color: #9356DC;
+  box-shadow: 0 2px 2px grey;
   color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
-button:hover {
+.choix__container__button:hover::after, .head__localisation__button:hover::after {
+  opacity: 1;
+}
+.choix__container__button::after, .head__localisation__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  border: 2px solid #ae80e5;
   background-color: #ae80e5;
-  border-color: #ae80e5;
-  box-shadow: 0px 5px 5px #797979;
+  box-shadow: 0 2px 2px #18092a;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms 150ms;
 }
 
 @keyframes menu {
@@ -179,13 +194,6 @@ footer ul a {
 .head__localisation__button {
   margin-top: 10px;
   padding: 15px 30px;
-  font-family: "roboto", sans-serif;
-  border-radius: 50px;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1024px) {
@@ -641,13 +649,6 @@ footer ul a {
 }
 .choix__container__button {
   padding: 15px 55px;
-  font-family: "roboto", sans-serif;
-  border-radius: 50px;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -922,13 +923,6 @@ footer ul a {
 }
 .choix__container__button {
   padding: 15px 55px;
-  font-family: "roboto", sans-serif;
-  border-radius: 50px;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -1185,13 +1179,6 @@ footer ul a {
 }
 .choix__container__button {
   padding: 15px 55px;
-  font-family: "roboto", sans-serif;
-  border-radius: 50px;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -1459,13 +1446,6 @@ footer ul a {
 }
 .choix__container__button {
   padding: 15px 55px;
-  font-family: "roboto", sans-serif;
-  border-radius: 50px;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  box-shadow: 0px 5px 5px rgba(197, 197, 197, 0.7);
-  transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,7 @@
     border-radius: 40px 40px 0 0;
     margin-top: -170px;
     overflow: overlay;
+    
 
     @media all and (min-width: 1025px) {
         margin-top: unset;
@@ -48,9 +49,7 @@
 }
 
 .choix {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include choix;
 
     &__entrees {
         padding: 10px;
@@ -236,11 +235,7 @@
     }
 
     &__container {
-        min-width: 375px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 0 50px 0;
+        @include container-bouton;
 
         &__button {
             padding: 15px 55px;

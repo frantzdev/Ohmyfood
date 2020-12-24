@@ -48,9 +48,7 @@
 }
 
 .choix {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include choix;
 
     &__entrees {
         padding: 10px;
@@ -70,8 +68,45 @@
             width: 40px;
         }
 
+
+
         &__poulpe {
             @include choix-assiette;
+            position: relative;
+            z-index: 1;
+            background-color: white;
+            overflow: hidden;
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    transform: scaleX(0.15);
+                }
+
+                & i {
+                    transform: translateX(-15px) rotate(2turn);
+                }
+
+                & .choix__entrees__poulpe--prix {
+                    transform: translateX(-50px);
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                background-color: $color-tertiary;
+                opacity: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform 2000ms;
+            }
+
 
             &--texte {
                 padding: 10px;
@@ -79,8 +114,25 @@
 
             &--prix {
                 padding: 10px;
+                padding-right: 20px;
                 font-weight: bold;
+                position: relative;
+                transition: transform 1000ms ease-in-out;
             }
+
+            & i {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                font-size: 20px;
+                color: white;
+                margin-bottom: 15px;
+                // transform-origin: right;
+                transform: rotate(0turn);
+                transform: translateX(0);
+                transition: transform 1000ms ease-in-out;
+            }
+
         }
 
         &__veloute {
@@ -223,11 +275,7 @@
     }
 
     &__container {
-        min-width: 375px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 0 50px 0;
+        @include container-bouton;
 
         &__button {
             padding: 15px 55px;

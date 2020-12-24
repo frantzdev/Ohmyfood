@@ -9,9 +9,7 @@ h3, p {
 }
 
 .footer--logo {
-    font-family: 'Shrikhand', cursive;
-    font-style: italic;
-    font-weight: bold;
+    @include shrikhand;
 }
 
 li {

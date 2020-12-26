@@ -12,10 +12,6 @@
   }
 }
 
-body {
-  box-sizing: border-box;
-}
-
 h1, h2 {
   font-family: "roboto", sans-serif;
   font-size: 1.5rem;
@@ -413,6 +409,12 @@ footer ul a {
   width: 100%;
   object-fit: cover;
 }
+@media all and (min-width: 1025px) {
+  .image img {
+    width: 99%;
+    height: 100%;
+  }
+}
 
 .francaise {
   background-color: #f6f6f6;
@@ -704,13 +706,6 @@ footer ul a {
   align-items: center;
   padding: 40px 0 50px 0;
 }
-@media all and (min-width: 1025px) {
-  .choix__container {
-    position: absolute;
-    bottom: 100px;
-    right: 170%;
-  }
-}
 .choix__container__button {
   padding: 15px 55px;
 }
@@ -732,6 +727,12 @@ footer ul a {
 .enchantee-image img {
   width: 100%;
   object-fit: cover;
+}
+@media all and (min-width: 1025px) {
+  .enchantee-image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .enchantee {
@@ -1001,13 +1002,6 @@ footer ul a {
   align-items: center;
   padding: 40px 0 50px 0;
 }
-@media all and (min-width: 1025px) {
-  .choix__container {
-    position: absolute;
-    bottom: 100px;
-    right: 170%;
-  }
-}
 .choix__container__button {
   padding: 15px 55px;
 }
@@ -1029,6 +1023,12 @@ footer ul a {
 .image img {
   width: 100%;
   object-fit: cover;
+}
+@media all and (min-width: 1025px) {
+  .image img {
+    width: 99%;
+    height: 100%;
+  }
 }
 
 .delice {
@@ -1279,13 +1279,6 @@ footer ul a {
   align-items: center;
   padding: 40px 0 50px 0;
 }
-@media all and (min-width: 1025px) {
-  .choix__container {
-    position: absolute;
-    bottom: 100px;
-    right: 170%;
-  }
-}
 .choix__container__button {
   padding: 15px 55px;
 }
@@ -1312,7 +1305,6 @@ footer ul a {
 @media all and (min-width: 1025px) {
   .image img {
     width: 99%;
-    border-radius: 40px;
   }
 }
 
@@ -1567,13 +1559,6 @@ footer ul a {
   justify-content: center;
   align-items: center;
   padding: 40px 0 50px 0;
-}
-@media all and (min-width: 1025px) {
-  .choix__container {
-    position: absolute;
-    bottom: 100px;
-    right: 170%;
-  }
 }
 .choix__container__button {
   padding: 15px 55px;

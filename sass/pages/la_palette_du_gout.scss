@@ -76,40 +76,34 @@
 
         &__escargot {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__escargot--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__foiegras {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__foiegras--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__oeuf {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__oeuf--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -134,40 +128,34 @@
 
         &__herbes {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__herbes--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__parmentier {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__parmentier--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__turbot {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__turbot--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -192,40 +180,34 @@
 
         &__parisbrest {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__parisbrest--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__chocolat {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__chocolat--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__mousse {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__mousse--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }

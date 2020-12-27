@@ -77,92 +77,34 @@
 
         &__poulpe {
             @include choix-assiette;
-            position: relative;
-            z-index: 1;
-            background-color: white;
-            overflow: hidden;
+            @include validation;
 
             &:hover {
-                &::after {
-                    opacity: 1;
-                    transform: scaleX(0.15);
-                }
-
-                & i {
-                    transform: translateX(-15px) rotate(2turn);
-                }
-
                 & .choix__entrees__poulpe--prix {
                     transform: translateX(-50px);
                 }
             }
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                z-index: -1;
-                background-color: $color-tertiary;
-                opacity: 0;
-                transform-origin: right;
-                transform: scaleX(0);
-                transition: transform 2000ms;
-            }
-
-
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                padding-right: 20px;
-                font-weight: bold;
-                position: relative;
-                transition: transform 1000ms ease-in-out;
-            }
-
-            & i {
-                display: inline-block;
-                position: absolute;
-                right: 0px;
-                font-size: 20px;
-                color: white;
-                margin-bottom: 15px;
-                // transform-origin: right;
-                transform: rotate(0turn);
-                transform: translateX(0);
-                transition: transform 1000ms ease-in-out;
-            }
-
         }
 
         &__veloute {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__veloute--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__soupe {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__soupe--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -185,40 +127,34 @@
 
         &__coquilles {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__coquilles--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__magret {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__magret--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__pigeonneau {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__pigeonneau--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -241,40 +177,34 @@
 
         &__violettes {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__violettes--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__fondant {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__fondant--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__millefeuille {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__millefeuille--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }

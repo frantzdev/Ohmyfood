@@ -74,40 +74,34 @@
 
         &__tartare {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__tartare--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__bouchee {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__bouchee--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__cepes {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__cepes--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -130,40 +124,34 @@
 
         &__poulet {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__poulet--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__langoustine-rotie {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__langoustine-rotie--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__angus {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__angus--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -186,40 +174,34 @@
 
         &__farandole {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__farandole--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__brulee {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__brulee--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__tiramisu {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__tiramisu--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }

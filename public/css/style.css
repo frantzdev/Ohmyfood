@@ -478,35 +478,11 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  animation: menu 4s;
   position: relative;
   z-index: 1;
   background-color: white;
   overflow: hidden;
-}
-.choix__entrees__poulpe:hover::after {
-  opacity: 1;
-  transform: scaleX(0.15);
-}
-.choix__entrees__poulpe:hover i {
-  transform: translateX(-15px) rotate(2turn);
-}
-.choix__entrees__poulpe:hover .choix__entrees__poulpe--prix {
-  transform: translateX(-50px);
-}
-.choix__entrees__poulpe::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #99E2D0;
-  opacity: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 2000ms;
+  animation: menu 4s;
 }
 .choix__entrees__poulpe--texte {
   padding: 10px;
@@ -516,6 +492,7 @@ footer ul a {
   padding-right: 20px;
   font-weight: bold;
   position: relative;
+  transform: translateX(0);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__poulpe i {
@@ -529,6 +506,30 @@ footer ul a {
   transform: translateX(0);
   transition: transform 1000ms ease-in-out;
 }
+.choix__entrees__poulpe:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__poulpe:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__poulpe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__poulpe:hover .choix__entrees__poulpe--prix {
+  transform: translateX(-50px);
+}
 .choix__entrees__veloute {
   border-radius: 10px;
   margin: 10px 0;
@@ -538,6 +539,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__veloute--texte {
@@ -545,7 +550,46 @@ footer ul a {
 }
 .choix__entrees__veloute--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__veloute i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__veloute:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__veloute:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__veloute::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__veloute:hover .choix__entrees__veloute--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__soupe {
   border-radius: 10px;
@@ -556,6 +600,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__soupe--texte {
@@ -563,7 +611,46 @@ footer ul a {
 }
 .choix__entrees__soupe--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__soupe i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__soupe:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__soupe:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__soupe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__soupe:hover .choix__entrees__soupe--prix {
+  transform: translateX(-50px);
 }
 .choix__plats {
   padding: 10px;
@@ -587,6 +674,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__coquilles--texte {
@@ -594,7 +685,46 @@ footer ul a {
 }
 .choix__plats__coquilles--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__coquilles i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__coquilles:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__coquilles:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__coquilles::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__coquilles:hover .choix__plats__coquilles--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__magret {
   border-radius: 10px;
@@ -605,6 +735,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__magret--texte {
@@ -612,7 +746,46 @@ footer ul a {
 }
 .choix__plats__magret--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__magret i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__magret:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__magret:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__magret::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__magret:hover .choix__plats__magret--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__pigeonneau {
   border-radius: 10px;
@@ -623,6 +796,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__pigeonneau--texte {
@@ -630,7 +807,46 @@ footer ul a {
 }
 .choix__plats__pigeonneau--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__pigeonneau i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__pigeonneau:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__pigeonneau:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__pigeonneau::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__pigeonneau:hover .choix__plats__pigeonneau--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts {
   padding: 10px;
@@ -654,6 +870,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__violettes--texte {
@@ -661,7 +881,46 @@ footer ul a {
 }
 .choix__desserts__violettes--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__violettes i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__violettes:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__violettes:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__violettes::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__violettes:hover .choix__desserts__violettes--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__fondant {
   border-radius: 10px;
@@ -672,6 +931,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__fondant--texte {
@@ -679,7 +942,46 @@ footer ul a {
 }
 .choix__desserts__fondant--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__fondant i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__fondant:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__fondant:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__fondant::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__fondant:hover .choix__desserts__fondant--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__millefeuille {
   border-radius: 10px;
@@ -690,6 +992,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__millefeuille--texte {
@@ -697,7 +1003,46 @@ footer ul a {
 }
 .choix__desserts__millefeuille--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__millefeuille i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__millefeuille:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__millefeuille:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__millefeuille::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__millefeuille:hover .choix__desserts__millefeuille--prix {
+  transform: translateX(-50px);
 }
 .choix__container {
   min-width: 375px;
@@ -798,6 +1143,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__ravioles--texte {
@@ -805,7 +1154,46 @@ footer ul a {
 }
 .choix__entrees__ravioles--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__ravioles i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__ravioles:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__ravioles:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__ravioles::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__ravioles:hover .choix__entrees__ravioles--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__caviar {
   border-radius: 10px;
@@ -816,6 +1204,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__caviar--texte {
@@ -823,7 +1215,46 @@ footer ul a {
 }
 .choix__entrees__caviar--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__caviar i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__caviar:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__caviar:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__caviar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__caviar:hover .choix__entrees__caviar--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__homard-espuma {
   border-radius: 10px;
@@ -834,6 +1265,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__homard-espuma--texte {
@@ -841,7 +1276,46 @@ footer ul a {
 }
 .choix__entrees__homard-espuma--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__homard-espuma i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__homard-espuma:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__homard-espuma:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__homard-espuma::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__homard-espuma:hover .choix__entrees__homard-espuma--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__canard-cuit {
   border-radius: 10px;
@@ -852,6 +1326,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__canard-cuit--texte {
@@ -859,7 +1337,46 @@ footer ul a {
 }
 .choix__entrees__canard-cuit--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__canard-cuit i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__canard-cuit:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__canard-cuit:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__canard-cuit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__canard-cuit:hover .choix__entrees__canard-cuit--prix {
+  transform: translateX(-50px);
 }
 .choix__plats {
   padding: 10px;
@@ -883,6 +1400,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__saintjacques--texte {
@@ -890,7 +1411,46 @@ footer ul a {
 }
 .choix__plats__saintjacques--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__saintjacques i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__saintjacques:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__saintjacques:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__saintjacques::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__saintjacques:hover .choix__plats__saintjacques--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__langoustine {
   border-radius: 10px;
@@ -901,6 +1461,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__langoustine--texte {
@@ -908,7 +1472,46 @@ footer ul a {
 }
 .choix__plats__langoustine--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__langoustine i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__langoustine:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__langoustine:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__langoustine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__langoustine:hover .choix__plats__langoustine--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__queue {
   border-radius: 10px;
@@ -919,6 +1522,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__queue--texte {
@@ -926,7 +1533,46 @@ footer ul a {
 }
 .choix__plats__queue--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__queue i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__queue:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__queue:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__queue::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__queue:hover .choix__plats__queue--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts {
   padding: 10px;
@@ -950,6 +1596,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__macaronnoisette--texte {
@@ -957,7 +1607,46 @@ footer ul a {
 }
 .choix__desserts__macaronnoisette--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__macaronnoisette i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__macaronnoisette:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__macaronnoisette:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__macaronnoisette::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__macaronnoisette:hover .choix__desserts__macaronnoisette--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__baba {
   border-radius: 10px;
@@ -968,6 +1657,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__baba--texte {
@@ -975,7 +1668,46 @@ footer ul a {
 }
 .choix__desserts__baba--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__baba i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__baba:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__baba:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__baba::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__baba:hover .choix__desserts__baba--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__tartecitron {
   border-radius: 10px;
@@ -986,6 +1718,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__tartecitron--texte {
@@ -993,7 +1729,46 @@ footer ul a {
 }
 .choix__desserts__tartecitron--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__tartecitron i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__tartecitron:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__tartecitron:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__tartecitron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__tartecitron:hover .choix__desserts__tartecitron--prix {
+  transform: translateX(-50px);
 }
 .choix__container {
   min-width: 375px;
@@ -1093,6 +1868,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__tartare--texte {
@@ -1100,7 +1879,46 @@ footer ul a {
 }
 .choix__entrees__tartare--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__tartare i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__tartare:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__tartare:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__tartare::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__tartare:hover .choix__entrees__tartare--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__bouchee {
   border-radius: 10px;
@@ -1111,6 +1929,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__bouchee--texte {
@@ -1118,7 +1940,46 @@ footer ul a {
 }
 .choix__entrees__bouchee--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__bouchee i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__bouchee:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__bouchee:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__bouchee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__bouchee:hover .choix__entrees__bouchee--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__cepes {
   border-radius: 10px;
@@ -1129,6 +1990,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__cepes--texte {
@@ -1136,7 +2001,46 @@ footer ul a {
 }
 .choix__entrees__cepes--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__cepes i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__cepes:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__cepes:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__cepes::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__cepes:hover .choix__entrees__cepes--prix {
+  transform: translateX(-50px);
 }
 .choix__plats {
   padding: 10px;
@@ -1160,6 +2064,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__poulet--texte {
@@ -1167,7 +2075,46 @@ footer ul a {
 }
 .choix__plats__poulet--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__poulet i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__poulet:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__poulet:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__poulet::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__poulet:hover .choix__plats__poulet--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__langoustine-rotie {
   border-radius: 10px;
@@ -1178,6 +2125,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__langoustine-rotie--texte {
@@ -1185,7 +2136,46 @@ footer ul a {
 }
 .choix__plats__langoustine-rotie--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__langoustine-rotie i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__langoustine-rotie:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__langoustine-rotie:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__langoustine-rotie::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__langoustine-rotie:hover .choix__plats__langoustine-rotie--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__angus {
   border-radius: 10px;
@@ -1196,6 +2186,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__angus--texte {
@@ -1203,7 +2197,46 @@ footer ul a {
 }
 .choix__plats__angus--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__angus i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__angus:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__angus:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__angus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__angus:hover .choix__plats__angus--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts {
   padding: 10px;
@@ -1227,6 +2260,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__farandole--texte {
@@ -1234,7 +2271,46 @@ footer ul a {
 }
 .choix__desserts__farandole--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__farandole i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__farandole:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__farandole:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__farandole::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__farandole:hover .choix__desserts__farandole--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__brulee {
   border-radius: 10px;
@@ -1245,6 +2321,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__brulee--texte {
@@ -1252,7 +2332,46 @@ footer ul a {
 }
 .choix__desserts__brulee--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__brulee i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__brulee:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__brulee:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__brulee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__brulee:hover .choix__desserts__brulee--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__tiramisu {
   border-radius: 10px;
@@ -1263,6 +2382,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__tiramisu--texte {
@@ -1270,7 +2393,46 @@ footer ul a {
 }
 .choix__desserts__tiramisu--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__tiramisu i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__tiramisu:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__tiramisu:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__tiramisu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__tiramisu:hover .choix__desserts__tiramisu--prix {
+  transform: translateX(-50px);
 }
 .choix__container {
   min-width: 375px;
@@ -1370,6 +2532,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__escargot--texte {
@@ -1377,7 +2543,46 @@ footer ul a {
 }
 .choix__entrees__escargot--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__escargot i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__escargot:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__escargot:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__escargot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__escargot:hover .choix__entrees__escargot--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__foiegras {
   border-radius: 10px;
@@ -1388,6 +2593,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__foiegras--texte {
@@ -1395,7 +2604,46 @@ footer ul a {
 }
 .choix__entrees__foiegras--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__foiegras i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__foiegras:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__foiegras:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__foiegras::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__foiegras:hover .choix__entrees__foiegras--prix {
+  transform: translateX(-50px);
 }
 .choix__entrees__oeuf {
   border-radius: 10px;
@@ -1406,6 +2654,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__entrees__oeuf--texte {
@@ -1413,7 +2665,46 @@ footer ul a {
 }
 .choix__entrees__oeuf--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__oeuf i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__entrees__oeuf:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__entrees__oeuf:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__entrees__oeuf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__entrees__oeuf:hover .choix__entrees__oeuf--prix {
+  transform: translateX(-50px);
 }
 .choix__plats {
   padding: 10px;
@@ -1439,6 +2730,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__herbes--texte {
@@ -1446,7 +2741,46 @@ footer ul a {
 }
 .choix__plats__herbes--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__herbes i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__herbes:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__herbes:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__herbes::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__herbes:hover .choix__plats__herbes--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__parmentier {
   border-radius: 10px;
@@ -1457,6 +2791,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__parmentier--texte {
@@ -1464,7 +2802,46 @@ footer ul a {
 }
 .choix__plats__parmentier--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__parmentier i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__parmentier:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__parmentier:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__parmentier::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__parmentier:hover .choix__plats__parmentier--prix {
+  transform: translateX(-50px);
 }
 .choix__plats__turbot {
   border-radius: 10px;
@@ -1475,6 +2852,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__plats__turbot--texte {
@@ -1482,7 +2863,46 @@ footer ul a {
 }
 .choix__plats__turbot--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__turbot i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__plats__turbot:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__plats__turbot:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__plats__turbot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__plats__turbot:hover .choix__plats__turbot--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts {
   padding: 10px;
@@ -1508,6 +2928,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__parisbrest--texte {
@@ -1515,7 +2939,46 @@ footer ul a {
 }
 .choix__desserts__parisbrest--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__parisbrest i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__parisbrest:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__parisbrest:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__parisbrest::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__parisbrest:hover .choix__desserts__parisbrest--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__chocolat {
   border-radius: 10px;
@@ -1526,6 +2989,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__chocolat--texte {
@@ -1533,7 +3000,46 @@ footer ul a {
 }
 .choix__desserts__chocolat--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__chocolat i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__chocolat:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__chocolat:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__chocolat::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__chocolat:hover .choix__desserts__chocolat--prix {
+  transform: translateX(-50px);
 }
 .choix__desserts__mousse {
   border-radius: 10px;
@@ -1544,6 +3050,10 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
   animation: menu 4s;
 }
 .choix__desserts__mousse--texte {
@@ -1551,7 +3061,46 @@ footer ul a {
 }
 .choix__desserts__mousse--prix {
   padding: 10px;
+  padding-right: 20px;
   font-weight: bold;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__mousse i {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  transform: rotate(0turn);
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+.choix__desserts__mousse:hover::after {
+  opacity: 1;
+  transform: scaleX(0.15);
+}
+.choix__desserts__mousse:hover i {
+  transform: translateX(-15px) rotate(2turn);
+}
+.choix__desserts__mousse::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #99E2D0;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1500ms;
+}
+.choix__desserts__mousse:hover .choix__desserts__mousse--prix {
+  transform: translateX(-50px);
 }
 .choix__container {
   min-width: 375px;

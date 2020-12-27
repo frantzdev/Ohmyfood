@@ -75,53 +75,45 @@
 
         &__ravioles {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__ravioles--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__caviar {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__caviar--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__homard-espuma {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__homard-espuma--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__canard-cuit {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__entrees__canard-cuit--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -144,40 +136,34 @@
 
         &__saintjacques {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__saintjacques--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__langoustine {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__langoustine--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__queue {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__plats__queue--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }
@@ -200,40 +186,34 @@
 
         &__macaronnoisette {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__macaronnoisette--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__baba {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__baba--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
 
         &__tartecitron {
             @include choix-assiette;
+            @include validation;
 
-            &--texte {
-                padding: 10px;
-            }
-
-            &--prix {
-                padding: 10px;
-                font-weight: bold;
+            &:hover {
+                & .choix__desserts__tartecitron--prix {
+                    transform: translateX(-50px);
+                }
             }
         }
     }

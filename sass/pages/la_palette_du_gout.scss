@@ -46,9 +46,43 @@
             @include shrikhand;
         }
 
-        & i {
-            padding-right: 20px;
-            font-size: 2rem;
+        & button {
+            background-color: $color-background;
+            border-color: transparent;
+            outline: 0;    /* retire la bordure du bouton à la selection */
+
+            & i {
+                font-size: 2rem;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+
+                &:active {  /* hover */
+
+                    &:after {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+
+        & i:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            background-image: url(../../public/img/coeur/heart-solid.svg);
+            background-repeat: no-repeat;
+            transform-origin: center center;
+            transform: scaleY(0);
+            transition: transform 2000ms, opacity 500ms;
+            
         }
     }
 }
@@ -58,7 +92,7 @@
 
     &__entrees {
         padding: 10px;
-        min-width: 355px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -77,6 +111,7 @@
         &__escargot {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__entrees__escargot--prix {
@@ -88,6 +123,7 @@
         &__foiegras {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__entrees__foiegras--prix {
@@ -99,6 +135,7 @@
         &__oeuf {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__entrees__oeuf--prix {
@@ -110,7 +147,7 @@
 
     &__plats {
         padding: 10px;
-        min-width: 355px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -129,6 +166,7 @@
         &__herbes {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__plats__herbes--prix {
@@ -140,6 +178,7 @@
         &__parmentier {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__plats__parmentier--prix {
@@ -151,6 +190,7 @@
         &__turbot {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__plats__turbot--prix {
@@ -162,7 +202,7 @@
 
     &__desserts {
         padding: 10px;
-        min-width: 355px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -181,6 +221,7 @@
         &__parisbrest {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__desserts__parisbrest--prix {
@@ -192,6 +233,7 @@
         &__chocolat {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__desserts__chocolat--prix {
@@ -203,6 +245,7 @@
         &__mousse {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__desserts__mousse--prix {

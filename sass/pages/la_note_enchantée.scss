@@ -15,7 +15,7 @@
         width: 100%;
         object-fit: cover;
         @media all and (min-width: 1025px) {
-            width: 100%;
+            width: 99%;
             height: 100%;
         }
     }
@@ -45,9 +45,45 @@
             @include shrikhand;
         }
 
-        & i {
-            padding-right: 20px;
-            font-size: 2rem;
+        & .coeur {
+            background-color: $color-background;
+            border-color: transparent;
+            outline: 0;
+            /* retire la bordure du bouton à la selection */
+
+            & i {
+                font-size: 2rem;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+
+                &:active {
+                    /* hover */
+
+                    &:after {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+
+        & i:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            background-image: url(../../public/img/coeur/heart-solid.svg);
+            background-repeat: no-repeat;
+            transform-origin: center center;
+            transform: scaleY(0);
+            transition: transform 2000ms, opacity 500ms;
+            
         }
     }
 }
@@ -57,7 +93,7 @@
 
     &__entrees {
         padding: 10px;
-        min-width: 355px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -76,6 +112,7 @@
         &__ravioles {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__entrees__ravioles--prix {
@@ -87,6 +124,7 @@
         &__caviar {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__entrees__caviar--prix {
@@ -98,6 +136,7 @@
         &__homard-espuma {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__entrees__homard-espuma--prix {
@@ -109,6 +148,7 @@
         &__canard-cuit {
             @include choix-assiette;
             @include validation;
+            animation: menu 2s;
 
             &:hover {
                 & .choix__entrees__canard-cuit--prix {
@@ -120,6 +160,7 @@
 
     &__plats {
         padding: 10px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -137,6 +178,7 @@
         &__saintjacques {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__plats__saintjacques--prix {
@@ -148,6 +190,7 @@
         &__langoustine {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__plats__langoustine--prix {
@@ -159,6 +202,7 @@
         &__queue {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__plats__queue--prix {
@@ -170,6 +214,7 @@
 
     &__desserts {
         padding: 10px;
+        max-width: 355px;
 
         &--titre {
             padding: 10px;
@@ -187,6 +232,7 @@
         &__macaronnoisette {
             @include choix-assiette;
             @include validation;
+            animation: menu 8s;
 
             &:hover {
                 & .choix__desserts__macaronnoisette--prix {
@@ -198,6 +244,7 @@
         &__baba {
             @include choix-assiette;
             @include validation;
+            animation: menu 6s;
 
             &:hover {
                 & .choix__desserts__baba--prix {
@@ -209,6 +256,7 @@
         &__tartecitron {
             @include choix-assiette;
             @include validation;
+            animation: menu 4s;
 
             &:hover {
                 & .choix__desserts__tartecitron--prix {

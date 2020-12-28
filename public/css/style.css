@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -171,10 +172,7 @@ footer ul a {
   background-color: #eaeaea;
   box-shadow: 0px -5px 0px #ebe6e6;
   display: flex;
-  justify-content: flex-start;
-}
-.head__localisation__map i {
-  padding-left: 90px;
+  justify-content: center;
 }
 .head__localisation__map--texte {
   padding-left: 15px;
@@ -387,8 +385,39 @@ footer ul a {
   right: 15px;
   bottom: 185px;
 }
-.menu .container__carte__description i {
-  padding-right: 10px;
+.menu .container__carte__description button {
+  background-color: white;
+  border-color: transparent;
+  outline: 0;
+  /* retire la bordure du bouton à la selection */
+}
+.menu .container__carte__description button i {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu .container__carte__description button i:active {
+  /* hover */
+}
+.menu .container__carte__description button i:active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.menu .container__carte__description i:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url(../../public/img/coeur/heart-solid.svg);
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  transform: scaleY(0);
+  transition: transform 2000ms, opacity 500ms;
 }
 
 @media all and (min-width: 1025px) {
@@ -438,9 +467,39 @@ footer ul a {
   font-style: italic;
   font-weight: bold;
 }
-.francaise__titre i {
-  padding-right: 20px;
+.francaise__titre .coeur {
+  background-color: #f6f6f6;
+  border-color: transparent;
+  outline: 0;
+  /* retire la bordure du bouton à la selection */
+}
+.francaise__titre .coeur i {
   font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.francaise__titre .coeur i:active {
+  /* hover */
+}
+.francaise__titre .coeur i:active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.francaise__titre i:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url(../../public/img/coeur/heart-solid.svg);
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  transform: scaleY(0);
+  transition: transform 2000ms, opacity 500ms;
 }
 
 .choix {
@@ -456,7 +515,7 @@ footer ul a {
 }
 .choix__entrees {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__entrees--titre {
   padding: 10px;
@@ -470,6 +529,7 @@ footer ul a {
   width: 40px;
 }
 .choix__entrees__poulpe {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -482,17 +542,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__entrees__poulpe--texte {
   padding: 10px;
 }
 .choix__entrees__poulpe--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__poulpe i {
@@ -503,7 +564,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__poulpe:hover::after {
@@ -531,6 +592,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__veloute {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -543,17 +605,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__entrees__veloute--texte {
   padding: 10px;
 }
 .choix__entrees__veloute--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__veloute i {
@@ -564,7 +627,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__veloute:hover::after {
@@ -592,6 +655,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__soupe {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -604,6 +668,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__entrees__soupe--texte {
@@ -611,10 +676,10 @@ footer ul a {
 }
 .choix__entrees__soupe--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__soupe i {
@@ -625,7 +690,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__soupe:hover::after {
@@ -654,6 +719,7 @@ footer ul a {
 }
 .choix__plats {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__plats--titre {
   padding: 10px;
@@ -666,6 +732,7 @@ footer ul a {
   width: 40px;
 }
 .choix__plats__coquilles {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -678,17 +745,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__plats__coquilles--texte {
   padding: 10px;
 }
 .choix__plats__coquilles--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__coquilles i {
@@ -699,7 +767,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__coquilles:hover::after {
@@ -727,6 +795,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__magret {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -739,17 +808,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__plats__magret--texte {
   padding: 10px;
 }
 .choix__plats__magret--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__magret i {
@@ -760,7 +830,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__magret:hover::after {
@@ -788,6 +858,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__pigeonneau {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -800,6 +871,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__plats__pigeonneau--texte {
@@ -807,10 +879,10 @@ footer ul a {
 }
 .choix__plats__pigeonneau--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__pigeonneau i {
@@ -821,7 +893,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__pigeonneau:hover::after {
@@ -850,6 +922,7 @@ footer ul a {
 }
 .choix__desserts {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__desserts--titre {
   padding: 10px;
@@ -862,6 +935,7 @@ footer ul a {
   width: 40px;
 }
 .choix__desserts__violettes {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -874,17 +948,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__desserts__violettes--texte {
   padding: 10px;
 }
 .choix__desserts__violettes--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__violettes i {
@@ -895,7 +970,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__violettes:hover::after {
@@ -923,6 +998,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__fondant {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -935,17 +1011,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__desserts__fondant--texte {
   padding: 10px;
 }
 .choix__desserts__fondant--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__fondant i {
@@ -956,7 +1033,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__fondant:hover::after {
@@ -984,6 +1061,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__millefeuille {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -996,6 +1074,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__desserts__millefeuille--texte {
@@ -1003,10 +1082,10 @@ footer ul a {
 }
 .choix__desserts__millefeuille--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__millefeuille i {
@@ -1017,7 +1096,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__millefeuille:hover::after {
@@ -1075,7 +1154,7 @@ footer ul a {
 }
 @media all and (min-width: 1025px) {
   .enchantee-image img {
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
 }
@@ -1103,9 +1182,39 @@ footer ul a {
   font-style: italic;
   font-weight: bold;
 }
-.enchantee__titre i {
-  padding-right: 20px;
+.enchantee__titre .coeur {
+  background-color: #f6f6f6;
+  border-color: transparent;
+  outline: 0;
+  /* retire la bordure du bouton à la selection */
+}
+.enchantee__titre .coeur i {
   font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.enchantee__titre .coeur i:active {
+  /* hover */
+}
+.enchantee__titre .coeur i:active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.enchantee__titre i:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url(../../public/img/coeur/heart-solid.svg);
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  transform: scaleY(0);
+  transition: transform 2000ms, opacity 500ms;
 }
 
 .choix {
@@ -1121,7 +1230,7 @@ footer ul a {
 }
 .choix__entrees {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__entrees--titre {
   padding: 10px;
@@ -1135,6 +1244,7 @@ footer ul a {
   width: 40px;
 }
 .choix__entrees__ravioles {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1147,17 +1257,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__entrees__ravioles--texte {
   padding: 10px;
 }
 .choix__entrees__ravioles--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__ravioles i {
@@ -1168,7 +1279,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__ravioles:hover::after {
@@ -1196,6 +1307,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__caviar {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1208,17 +1320,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__entrees__caviar--texte {
   padding: 10px;
 }
 .choix__entrees__caviar--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__caviar i {
@@ -1229,7 +1342,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__caviar:hover::after {
@@ -1257,6 +1370,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__homard-espuma {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1269,6 +1383,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__entrees__homard-espuma--texte {
@@ -1276,10 +1391,10 @@ footer ul a {
 }
 .choix__entrees__homard-espuma--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__homard-espuma i {
@@ -1290,7 +1405,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__homard-espuma:hover::after {
@@ -1318,6 +1433,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__canard-cuit {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1330,17 +1446,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 2s;
 }
 .choix__entrees__canard-cuit--texte {
   padding: 10px;
 }
 .choix__entrees__canard-cuit--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__canard-cuit i {
@@ -1351,7 +1468,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__canard-cuit:hover::after {
@@ -1380,6 +1497,7 @@ footer ul a {
 }
 .choix__plats {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__plats--titre {
   padding: 10px;
@@ -1392,6 +1510,7 @@ footer ul a {
   width: 40px;
 }
 .choix__plats__saintjacques {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1404,17 +1523,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__plats__saintjacques--texte {
   padding: 10px;
 }
 .choix__plats__saintjacques--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__saintjacques i {
@@ -1425,7 +1545,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__saintjacques:hover::after {
@@ -1453,6 +1573,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__langoustine {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1465,17 +1586,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__plats__langoustine--texte {
   padding: 10px;
 }
 .choix__plats__langoustine--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__langoustine i {
@@ -1486,7 +1608,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__langoustine:hover::after {
@@ -1514,6 +1636,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__queue {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1526,6 +1649,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__plats__queue--texte {
@@ -1533,10 +1657,10 @@ footer ul a {
 }
 .choix__plats__queue--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__queue i {
@@ -1547,7 +1671,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__queue:hover::after {
@@ -1576,6 +1700,7 @@ footer ul a {
 }
 .choix__desserts {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__desserts--titre {
   padding: 10px;
@@ -1588,6 +1713,7 @@ footer ul a {
   width: 40px;
 }
 .choix__desserts__macaronnoisette {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1600,17 +1726,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__desserts__macaronnoisette--texte {
   padding: 10px;
 }
 .choix__desserts__macaronnoisette--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__macaronnoisette i {
@@ -1621,7 +1748,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__macaronnoisette:hover::after {
@@ -1649,6 +1776,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__baba {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1661,17 +1789,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__desserts__baba--texte {
   padding: 10px;
 }
 .choix__desserts__baba--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__baba i {
@@ -1682,7 +1811,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__baba:hover::after {
@@ -1710,6 +1839,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__tartecitron {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1722,6 +1852,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__desserts__tartecitron--texte {
@@ -1729,10 +1860,10 @@ footer ul a {
 }
 .choix__desserts__tartecitron--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__tartecitron i {
@@ -1743,7 +1874,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__tartecitron:hover::after {
@@ -1828,9 +1959,39 @@ footer ul a {
   font-style: italic;
   font-weight: bold;
 }
-.delice__titre i {
-  padding-right: 20px;
+.delice__titre .coeur {
+  background-color: #f6f6f6;
+  border-color: transparent;
+  outline: 0;
+  /* retire la bordure du bouton à la selection */
+}
+.delice__titre .coeur i {
   font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.delice__titre .coeur i:active {
+  /* hover */
+}
+.delice__titre .coeur i:active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.delice__titre i:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url(../../public/img/coeur/heart-solid.svg);
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  transform: scaleY(0);
+  transition: transform 2000ms, opacity 500ms;
 }
 
 .choix {
@@ -1846,7 +2007,7 @@ footer ul a {
 }
 .choix__entrees {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__entrees--titre {
   padding: 10px;
@@ -1860,6 +2021,7 @@ footer ul a {
   width: 40px;
 }
 .choix__entrees__tartare {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1872,17 +2034,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__entrees__tartare--texte {
   padding: 10px;
 }
 .choix__entrees__tartare--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__tartare i {
@@ -1893,7 +2056,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__tartare:hover::after {
@@ -1921,6 +2084,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__bouchee {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1933,17 +2097,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__entrees__bouchee--texte {
   padding: 10px;
 }
 .choix__entrees__bouchee--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__bouchee i {
@@ -1954,7 +2119,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__bouchee:hover::after {
@@ -1982,6 +2147,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__cepes {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -1994,6 +2160,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__entrees__cepes--texte {
@@ -2001,10 +2168,10 @@ footer ul a {
 }
 .choix__entrees__cepes--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__cepes i {
@@ -2015,7 +2182,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__cepes:hover::after {
@@ -2044,6 +2211,7 @@ footer ul a {
 }
 .choix__plats {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__plats--titre {
   padding: 10px;
@@ -2056,6 +2224,7 @@ footer ul a {
   width: 40px;
 }
 .choix__plats__poulet {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2068,17 +2237,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__plats__poulet--texte {
   padding: 10px;
 }
 .choix__plats__poulet--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__poulet i {
@@ -2089,7 +2259,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__poulet:hover::after {
@@ -2117,6 +2287,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__langoustine-rotie {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2129,17 +2300,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__plats__langoustine-rotie--texte {
   padding: 10px;
 }
 .choix__plats__langoustine-rotie--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__langoustine-rotie i {
@@ -2150,7 +2322,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__langoustine-rotie:hover::after {
@@ -2178,6 +2350,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__angus {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2190,6 +2363,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__plats__angus--texte {
@@ -2197,10 +2371,10 @@ footer ul a {
 }
 .choix__plats__angus--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__angus i {
@@ -2211,7 +2385,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__angus:hover::after {
@@ -2240,6 +2414,7 @@ footer ul a {
 }
 .choix__desserts {
   padding: 10px;
+  max-width: 355px;
 }
 .choix__desserts--titre {
   padding: 10px;
@@ -2252,6 +2427,7 @@ footer ul a {
   width: 40px;
 }
 .choix__desserts__farandole {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2264,17 +2440,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__desserts__farandole--texte {
   padding: 10px;
 }
 .choix__desserts__farandole--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__farandole i {
@@ -2285,7 +2462,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__farandole:hover::after {
@@ -2313,6 +2490,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__brulee {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2325,17 +2503,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__desserts__brulee--texte {
   padding: 10px;
 }
 .choix__desserts__brulee--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__brulee i {
@@ -2346,7 +2525,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__brulee:hover::after {
@@ -2374,6 +2553,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__tiramisu {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2386,6 +2566,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__desserts__tiramisu--texte {
@@ -2393,10 +2574,10 @@ footer ul a {
 }
 .choix__desserts__tiramisu--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__tiramisu i {
@@ -2407,7 +2588,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__tiramisu:hover::after {
@@ -2492,9 +2673,39 @@ footer ul a {
   font-style: italic;
   font-weight: bold;
 }
-.palette__titre i {
-  padding-right: 20px;
+.palette__titre button {
+  background-color: #f6f6f6;
+  border-color: transparent;
+  outline: 0;
+  /* retire la bordure du bouton à la selection */
+}
+.palette__titre button i {
   font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.palette__titre button i:active {
+  /* hover */
+}
+.palette__titre button i:active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.palette__titre i:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url(../../public/img/coeur/heart-solid.svg);
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  transform: scaleY(0);
+  transition: transform 2000ms, opacity 500ms;
 }
 
 .choix {
@@ -2510,7 +2721,7 @@ footer ul a {
 }
 .choix__entrees {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__entrees--titre {
   padding: 10px;
@@ -2524,6 +2735,7 @@ footer ul a {
   width: 40px;
 }
 .choix__entrees__escargot {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2536,17 +2748,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__entrees__escargot--texte {
   padding: 10px;
 }
 .choix__entrees__escargot--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__escargot i {
@@ -2557,7 +2770,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__escargot:hover::after {
@@ -2585,6 +2798,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__foiegras {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2597,17 +2811,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__entrees__foiegras--texte {
   padding: 10px;
 }
 .choix__entrees__foiegras--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__foiegras i {
@@ -2618,7 +2833,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__foiegras:hover::after {
@@ -2646,6 +2861,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__entrees__oeuf {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2658,6 +2874,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__entrees__oeuf--texte {
@@ -2665,10 +2882,10 @@ footer ul a {
 }
 .choix__entrees__oeuf--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__oeuf i {
@@ -2679,7 +2896,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__entrees__oeuf:hover::after {
@@ -2708,7 +2925,7 @@ footer ul a {
 }
 .choix__plats {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__plats--titre {
   padding: 10px;
@@ -2722,6 +2939,7 @@ footer ul a {
   width: 40px;
 }
 .choix__plats__herbes {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2734,17 +2952,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__plats__herbes--texte {
   padding: 10px;
 }
 .choix__plats__herbes--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__herbes i {
@@ -2755,7 +2974,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__herbes:hover::after {
@@ -2783,6 +3002,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__parmentier {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2795,17 +3015,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__plats__parmentier--texte {
   padding: 10px;
 }
 .choix__plats__parmentier--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__parmentier i {
@@ -2816,7 +3037,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__parmentier:hover::after {
@@ -2844,6 +3065,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__plats__turbot {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2856,6 +3078,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__plats__turbot--texte {
@@ -2863,10 +3086,10 @@ footer ul a {
 }
 .choix__plats__turbot--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__turbot i {
@@ -2877,7 +3100,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__plats__turbot:hover::after {
@@ -2906,7 +3129,7 @@ footer ul a {
 }
 .choix__desserts {
   padding: 10px;
-  min-width: 355px;
+  max-width: 355px;
 }
 .choix__desserts--titre {
   padding: 10px;
@@ -2920,6 +3143,7 @@ footer ul a {
   width: 40px;
 }
 .choix__desserts__parisbrest {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2932,17 +3156,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 8s;
 }
 .choix__desserts__parisbrest--texte {
   padding: 10px;
 }
 .choix__desserts__parisbrest--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__parisbrest i {
@@ -2953,7 +3178,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__parisbrest:hover::after {
@@ -2981,6 +3206,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__chocolat {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -2993,17 +3219,18 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
-  animation: menu 4s;
+  white-space: nowrap;
+  animation: menu 6s;
 }
 .choix__desserts__chocolat--texte {
   padding: 10px;
 }
 .choix__desserts__chocolat--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__chocolat i {
@@ -3014,7 +3241,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__chocolat:hover::after {
@@ -3042,6 +3269,7 @@ footer ul a {
   transform: translateX(-50px);
 }
 .choix__desserts__mousse {
+  width: 355px;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 2px grey;
@@ -3054,6 +3282,7 @@ footer ul a {
   z-index: 1;
   background-color: white;
   overflow: hidden;
+  white-space: nowrap;
   animation: menu 4s;
 }
 .choix__desserts__mousse--texte {
@@ -3061,10 +3290,10 @@ footer ul a {
 }
 .choix__desserts__mousse--prix {
   padding: 10px;
-  padding-right: 20px;
+  padding-left: 0px;
   font-weight: bold;
   position: relative;
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__mousse i {
@@ -3075,7 +3304,7 @@ footer ul a {
   color: white;
   margin-bottom: 15px;
   transform: rotate(0turn);
-  transform: translateX(0);
+  transform: translateX(50px);
   transition: transform 1000ms ease-in-out;
 }
 .choix__desserts__mousse:hover::after {

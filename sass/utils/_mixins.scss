@@ -20,6 +20,7 @@
 }
 
 @mixin choix-assiette {
+        width: 355px;
         border-radius: 10px;
         margin: 10px 0;
         box-shadow: 0px 0px 2px grey;
@@ -32,16 +33,17 @@
         z-index: 1;
         background-color: white;
         overflow: hidden;
-        animation: menu 4s;
+        white-space: nowrap;
+        // animation: menu 4s;
         &--texte {
                 padding: 10px;
             }
         &--prix {
                 padding: 10px;
-                padding-right: 20px;
+                padding-left: 0px;
                 font-weight: bold;
                 position: relative;
-                transform: translateX(0);
+                transform: translateX(0px);
                 transition: transform 1000ms ease-in-out;
             }
 
@@ -53,7 +55,7 @@
                 color: white;
                 margin-bottom: 15px;
                 transform: rotate(0turn);
-                transform: translateX(0);
+                transform: translateX(50px);
                 transition: transform 1000ms ease-in-out;
             }
 }

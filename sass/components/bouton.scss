@@ -1,17 +1,9 @@
-.choix__container__button, .head__localisation__button {
+.choix__container__button,
+.head__localisation__button {
     @include bouton;
 }
 
 
-            
-@keyframes menu {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-    
-}
+
+
+

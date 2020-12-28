@@ -102,6 +102,7 @@
 
 @mixin bouton {
         font-family: 'roboto', sans-serif;
+        outline: none;
         border-radius: 50px;
         border: 2px solid $color-primary;
         background: linear-gradient(to top left, $color-primary, $color-secondary);

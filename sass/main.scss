@@ -2,10 +2,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./base/typography.scss";
-@import "./components/bouton.scss";
-@import "./layout/header.scss";
-@import "./layout/nav.scss";
+@import "./base/typography";
+@import "./components/bouton";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./components/keyframes";
+@import "./components/loader";
 
 
 

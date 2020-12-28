@@ -1,0 +1,42 @@
+@keyframes menu {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0turn)
+    }
+
+    to {
+        transform: rotate(3turn);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+}

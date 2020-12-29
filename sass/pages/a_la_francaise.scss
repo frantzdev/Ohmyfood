@@ -118,7 +118,12 @@
 
             &:hover {
                 & .choix__entrees__poulpe--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -130,7 +135,12 @@
 
             &:hover {
                 & .choix__entrees__veloute--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -142,7 +152,12 @@
 
             &:hover {
                 & .choix__entrees__soupe--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -172,7 +187,12 @@
 
             &:hover {
                 & .choix__plats__coquilles--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -184,7 +204,12 @@
 
             &:hover {
                 & .choix__plats__magret--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -196,7 +221,12 @@
 
             &:hover {
                 & .choix__plats__pigeonneau--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -226,7 +256,12 @@
 
             &:hover {
                 & .choix__desserts__violettes--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -238,7 +273,12 @@
 
             &:hover {
                 & .choix__desserts__fondant--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -250,7 +290,12 @@
 
             &:hover {
                 & .choix__desserts__millefeuille--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }

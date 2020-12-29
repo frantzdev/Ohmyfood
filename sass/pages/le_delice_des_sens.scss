@@ -81,7 +81,7 @@
             transform-origin: center center;
             transform: scaleY(0);
             transition: transform 2000ms, opacity 500ms;
-            
+
         }
     }
 }
@@ -115,7 +115,12 @@
 
             &:hover {
                 & .choix__entrees__tartare--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -127,7 +132,12 @@
 
             &:hover {
                 & .choix__entrees__bouchee--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -139,7 +149,12 @@
 
             &:hover {
                 & .choix__entrees__cepes--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -169,9 +184,16 @@
 
             &:hover {
                 & .choix__plats__poulet--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
+
+
         }
 
         &__langoustine-rotie {
@@ -181,7 +203,12 @@
 
             &:hover {
                 & .choix__plats__langoustine-rotie--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -193,7 +220,12 @@
 
             &:hover {
                 & .choix__plats__angus--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -223,7 +255,12 @@
 
             &:hover {
                 & .choix__desserts__farandole--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -235,7 +272,12 @@
 
             &:hover {
                 & .choix__desserts__brulee--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -247,7 +289,12 @@
 
             &:hover {
                 & .choix__desserts__tiramisu--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }

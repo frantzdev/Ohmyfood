@@ -34,30 +34,26 @@
         background-color: white;
         overflow: hidden;
         white-space: nowrap;
-        // animation: menu 4s;
+
         &--texte {
                 padding: 10px;
-            }
+        }
+
         &--prix {
                 padding: 10px;
                 padding-left: 0px;
                 font-weight: bold;
                 position: relative;
-                transform: translateX(0px);
-                transition: transform 1000ms ease-in-out;
-            }
+        }
 
-            & i {
+        & i {
                 display: inline-block;
                 position: absolute;
-                right: 0px;
+                right: -20px;
                 font-size: 20px;
                 color: white;
-                margin-bottom: 15px;
-                transform: rotate(0turn);
-                transform: translateX(50px);
-                transition: transform 1000ms ease-in-out;
-            }
+                margin-bottom: 18px;
+        }
 }
 
 @mixin validation {
@@ -68,7 +64,7 @@
                 }
 
                 & i {
-                        transform: translateX(-15px) rotate(2turn);
+                        animation: rotation 800ms 100ms ease-in forwards;
                 }
         }
 
@@ -84,7 +80,7 @@
                 opacity: 0;
                 transform-origin: right;
                 transform: scaleX(0);
-                transition: transform 1500ms;
+                transition: transform 500ms 350ms linear;
         }
 }
 
@@ -134,3 +130,6 @@
                 transition: opacity 500ms 150ms;
         }
 }
+
+
+

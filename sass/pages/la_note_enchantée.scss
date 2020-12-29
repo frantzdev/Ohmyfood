@@ -14,6 +14,7 @@
     & img {
         width: 100%;
         object-fit: cover;
+
         @media all and (min-width: 1025px) {
             width: 99%;
             height: 100%;
@@ -83,7 +84,7 @@
             transform-origin: center center;
             transform: scaleY(0);
             transition: transform 2000ms, opacity 500ms;
-            
+
         }
     }
 }
@@ -116,7 +117,12 @@
 
             &:hover {
                 & .choix__entrees__ravioles--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -128,7 +134,12 @@
 
             &:hover {
                 & .choix__entrees__caviar--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -140,7 +151,12 @@
 
             &:hover {
                 & .choix__entrees__homard-espuma--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -152,7 +168,12 @@
 
             &:hover {
                 & .choix__entrees__canard-cuit--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -182,7 +203,12 @@
 
             &:hover {
                 & .choix__plats__saintjacques--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -194,7 +220,12 @@
 
             &:hover {
                 & .choix__plats__langoustine--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -206,7 +237,12 @@
 
             &:hover {
                 & .choix__plats__queue--prix {
-                    transform: translateX(-50px);
+                     animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -236,7 +272,12 @@
 
             &:hover {
                 & .choix__desserts__macaronnoisette--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -248,7 +289,12 @@
 
             &:hover {
                 & .choix__desserts__baba--prix {
-                    transform: translateX(-50px);
+                     animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }
@@ -260,7 +306,12 @@
 
             &:hover {
                 & .choix__desserts__tartecitron--prix {
-                    transform: translateX(-50px);
+                    animation: tarif 1s $delay forwards;
+                }
+
+                & h3,
+                h3+p {
+                    animation: pointiller 1s $delay forwards;
                 }
             }
         }

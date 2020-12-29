@@ -34,9 +34,23 @@
         background-color: white;
         overflow: hidden;
         white-space: nowrap;
+        @media all and (max-width: 374px) {
+                width: 310px;
+        }
 
         &--texte {
                 padding: 10px;
+                & h3, h3+p {
+                        @media all and (max-width: 374px) {
+                                max-width: 220px;
+                        }
+                }
+
+                & h3+p {
+                        @media all and (max-width: 374px) {
+                                white-space: normal;
+                        }
+                }
         }
 
         &--prix {

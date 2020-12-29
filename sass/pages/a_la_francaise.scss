@@ -124,6 +124,9 @@
                 & h3,
                 h3+p {
                     animation: pointiller 1s $delay forwards;
+                    // @media all and ( max-width: 374px) {
+                    //     width: 250px;
+                    // }
                 }
             }
         }

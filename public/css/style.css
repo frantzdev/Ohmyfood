@@ -119,6 +119,7 @@ footer ul {
   footer ul {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 footer ul li {
@@ -128,9 +129,19 @@ footer ul .fa-utensils {
   padding-right: 8px;
   font-size: 10px;
 }
+@media all and (min-width: 768px) {
+  footer ul .fa-utensils {
+    font-size: 15px;
+  }
+}
 footer ul .fa-hands-helping {
   padding-right: 5px;
   font-size: 9px;
+}
+@media all and (min-width: 768px) {
+  footer ul .fa-hands-helping {
+    font-size: 15px;
+  }
 }
 footer ul a {
   text-decoration: none;
@@ -211,7 +222,7 @@ footer ul a {
   width: 100%;
   height: 1500px;
   line-height: 200px;
-  background-color: #99E2D0;
+  background: linear-gradient(#99E2D0, #ff79da, #9356DC);
   z-index: 5;
   position: absolute;
   top: 0;
@@ -648,8 +659,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__poulpe {
+    width: 310px;
+  }
+}
 .choix__entrees__poulpe--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__poulpe--texte h3, .choix__entrees__poulpe--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__poulpe--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__poulpe--prix {
   padding: 10px;
@@ -710,8 +736,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__veloute {
+    width: 310px;
+  }
+}
 .choix__entrees__veloute--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__veloute--texte h3, .choix__entrees__veloute--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__veloute--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__veloute--prix {
   padding: 10px;
@@ -772,8 +813,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__soupe {
+    width: 310px;
+  }
+}
 .choix__entrees__soupe--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__soupe--texte h3, .choix__entrees__soupe--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__soupe--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__soupe--prix {
   padding: 10px;
@@ -848,8 +904,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__coquilles {
+    width: 310px;
+  }
+}
 .choix__plats__coquilles--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__coquilles--texte h3, .choix__plats__coquilles--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__coquilles--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__coquilles--prix {
   padding: 10px;
@@ -910,8 +981,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__magret {
+    width: 310px;
+  }
+}
 .choix__plats__magret--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__magret--texte h3, .choix__plats__magret--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__magret--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__magret--prix {
   padding: 10px;
@@ -972,8 +1058,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__pigeonneau {
+    width: 310px;
+  }
+}
 .choix__plats__pigeonneau--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__pigeonneau--texte h3, .choix__plats__pigeonneau--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__pigeonneau--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__pigeonneau--prix {
   padding: 10px;
@@ -1048,8 +1149,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__violettes {
+    width: 310px;
+  }
+}
 .choix__desserts__violettes--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__violettes--texte h3, .choix__desserts__violettes--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__violettes--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__violettes--prix {
   padding: 10px;
@@ -1110,8 +1226,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__fondant {
+    width: 310px;
+  }
+}
 .choix__desserts__fondant--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__fondant--texte h3, .choix__desserts__fondant--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__fondant--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__fondant--prix {
   padding: 10px;
@@ -1172,8 +1303,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__millefeuille {
+    width: 310px;
+  }
+}
 .choix__desserts__millefeuille--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__millefeuille--texte h3, .choix__desserts__millefeuille--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__millefeuille--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__millefeuille--prix {
   padding: 10px;
@@ -1354,8 +1500,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__ravioles {
+    width: 310px;
+  }
+}
 .choix__entrees__ravioles--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__ravioles--texte h3, .choix__entrees__ravioles--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__ravioles--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__ravioles--prix {
   padding: 10px;
@@ -1416,8 +1577,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__caviar {
+    width: 310px;
+  }
+}
 .choix__entrees__caviar--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__caviar--texte h3, .choix__entrees__caviar--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__caviar--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__caviar--prix {
   padding: 10px;
@@ -1478,8 +1654,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__homard-espuma {
+    width: 310px;
+  }
+}
 .choix__entrees__homard-espuma--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__homard-espuma--texte h3, .choix__entrees__homard-espuma--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__homard-espuma--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__homard-espuma--prix {
   padding: 10px;
@@ -1540,8 +1731,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 2s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__canard-cuit {
+    width: 310px;
+  }
+}
 .choix__entrees__canard-cuit--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__canard-cuit--texte h3, .choix__entrees__canard-cuit--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__canard-cuit--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__canard-cuit--prix {
   padding: 10px;
@@ -1616,8 +1822,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__saintjacques {
+    width: 310px;
+  }
+}
 .choix__plats__saintjacques--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__saintjacques--texte h3, .choix__plats__saintjacques--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__saintjacques--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__saintjacques--prix {
   padding: 10px;
@@ -1678,8 +1899,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine {
+    width: 310px;
+  }
+}
 .choix__plats__langoustine--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine--texte h3, .choix__plats__langoustine--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__langoustine--prix {
   padding: 10px;
@@ -1740,8 +1976,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__queue {
+    width: 310px;
+  }
+}
 .choix__plats__queue--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__queue--texte h3, .choix__plats__queue--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__queue--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__queue--prix {
   padding: 10px;
@@ -1816,8 +2067,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__macaronnoisette {
+    width: 310px;
+  }
+}
 .choix__desserts__macaronnoisette--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__macaronnoisette--texte h3, .choix__desserts__macaronnoisette--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__macaronnoisette--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__macaronnoisette--prix {
   padding: 10px;
@@ -1878,8 +2144,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__baba {
+    width: 310px;
+  }
+}
 .choix__desserts__baba--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__baba--texte h3, .choix__desserts__baba--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__baba--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__baba--prix {
   padding: 10px;
@@ -1940,8 +2221,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__tartecitron {
+    width: 310px;
+  }
+}
 .choix__desserts__tartecitron--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__tartecitron--texte h3, .choix__desserts__tartecitron--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__tartecitron--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__tartecitron--prix {
   padding: 10px;
@@ -2121,8 +2417,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__tartare {
+    width: 310px;
+  }
+}
 .choix__entrees__tartare--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__tartare--texte h3, .choix__entrees__tartare--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__tartare--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__tartare--prix {
   padding: 10px;
@@ -2183,8 +2494,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__bouchee {
+    width: 310px;
+  }
+}
 .choix__entrees__bouchee--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__bouchee--texte h3, .choix__entrees__bouchee--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__bouchee--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__bouchee--prix {
   padding: 10px;
@@ -2245,8 +2571,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__cepes {
+    width: 310px;
+  }
+}
 .choix__entrees__cepes--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__cepes--texte h3, .choix__entrees__cepes--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__cepes--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__cepes--prix {
   padding: 10px;
@@ -2321,8 +2662,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__poulet {
+    width: 310px;
+  }
+}
 .choix__plats__poulet--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__poulet--texte h3, .choix__plats__poulet--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__poulet--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__poulet--prix {
   padding: 10px;
@@ -2383,8 +2739,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine-rotie {
+    width: 310px;
+  }
+}
 .choix__plats__langoustine-rotie--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine-rotie--texte h3, .choix__plats__langoustine-rotie--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__langoustine-rotie--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__langoustine-rotie--prix {
   padding: 10px;
@@ -2445,8 +2816,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__angus {
+    width: 310px;
+  }
+}
 .choix__plats__angus--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__angus--texte h3, .choix__plats__angus--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__angus--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__angus--prix {
   padding: 10px;
@@ -2521,8 +2907,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__farandole {
+    width: 310px;
+  }
+}
 .choix__desserts__farandole--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__farandole--texte h3, .choix__desserts__farandole--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__farandole--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__farandole--prix {
   padding: 10px;
@@ -2583,8 +2984,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__brulee {
+    width: 310px;
+  }
+}
 .choix__desserts__brulee--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__brulee--texte h3, .choix__desserts__brulee--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__brulee--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__brulee--prix {
   padding: 10px;
@@ -2645,8 +3061,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__tiramisu {
+    width: 310px;
+  }
+}
 .choix__desserts__tiramisu--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__tiramisu--texte h3, .choix__desserts__tiramisu--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__tiramisu--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__tiramisu--prix {
   padding: 10px;
@@ -2826,8 +3257,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__escargot {
+    width: 310px;
+  }
+}
 .choix__entrees__escargot--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__escargot--texte h3, .choix__entrees__escargot--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__escargot--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__escargot--prix {
   padding: 10px;
@@ -2888,8 +3334,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__foiegras {
+    width: 310px;
+  }
+}
 .choix__entrees__foiegras--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__foiegras--texte h3, .choix__entrees__foiegras--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__foiegras--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__foiegras--prix {
   padding: 10px;
@@ -2950,8 +3411,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__entrees__oeuf {
+    width: 310px;
+  }
+}
 .choix__entrees__oeuf--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__oeuf--texte h3, .choix__entrees__oeuf--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__entrees__oeuf--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__entrees__oeuf--prix {
   padding: 10px;
@@ -3027,8 +3503,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__herbes {
+    width: 310px;
+  }
+}
 .choix__plats__herbes--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__herbes--texte h3, .choix__plats__herbes--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__herbes--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__herbes--prix {
   padding: 10px;
@@ -3089,8 +3580,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__parmentier {
+    width: 310px;
+  }
+}
 .choix__plats__parmentier--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__parmentier--texte h3, .choix__plats__parmentier--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__parmentier--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__parmentier--prix {
   padding: 10px;
@@ -3151,8 +3657,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__plats__turbot {
+    width: 310px;
+  }
+}
 .choix__plats__turbot--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__plats__turbot--texte h3, .choix__plats__turbot--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__plats__turbot--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__plats__turbot--prix {
   padding: 10px;
@@ -3228,8 +3749,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 8s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__parisbrest {
+    width: 310px;
+  }
+}
 .choix__desserts__parisbrest--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__parisbrest--texte h3, .choix__desserts__parisbrest--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__parisbrest--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__parisbrest--prix {
   padding: 10px;
@@ -3290,8 +3826,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 6s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__chocolat {
+    width: 310px;
+  }
+}
 .choix__desserts__chocolat--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__chocolat--texte h3, .choix__desserts__chocolat--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__chocolat--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__chocolat--prix {
   padding: 10px;
@@ -3352,8 +3903,23 @@ footer ul a {
   white-space: nowrap;
   animation: menu 4s;
 }
+@media all and (max-width: 374px) {
+  .choix__desserts__mousse {
+    width: 310px;
+  }
+}
 .choix__desserts__mousse--texte {
   padding: 10px;
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__mousse--texte h3, .choix__desserts__mousse--texte h3 + p {
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 374px) {
+  .choix__desserts__mousse--texte h3 + p {
+    white-space: normal;
+  }
 }
 .choix__desserts__mousse--prix {
   padding: 10px;

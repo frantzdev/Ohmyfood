@@ -10,6 +10,7 @@ footer {
         @media all and ( min-width: 768px) {
             display: flex;
             justify-content: space-around;
+            align-items: baseline;
         }
         & li {
             padding: 5px 0;
@@ -18,11 +19,17 @@ footer {
         & .fa-utensils {
             padding-right: 8px;
             font-size: 10px;
+            @media all and ( min-width: 768px) {
+                font-size: 15px
+            }
         }
 
         & .fa-hands-helping {
             padding-right: 5px;
             font-size: 9px;
+            @media all and ( min-width: 768px) {
+                font-size: 15px
+            }
         }
 
         & a {

@@ -5,10 +5,10 @@
 }
 
 .image {
-    // width: 100%;
+
 
     @media all and (min-width: 1025px) {
-        width: unset;
+        width: 250%;
     }
 
     & img {
@@ -17,7 +17,7 @@
 
         @media all and (min-width: 1025px) {
             width: 99%;
-            height: 100%;
+            height: 99%;
         }
     }
 
@@ -28,6 +28,7 @@
     border-radius: 40px 40px 0 0;
     margin-top: -50px;
     overflow: overlay;
+    position: relative;
 
     @media all and (min-width: 1025px) {
         margin-top: unset;
@@ -49,7 +50,7 @@
             background-color: $color-background;
             border-color: transparent;
             outline: 0;
-            /* retire la bordure du bouton à la selection */
+
 
             & i {
                 font-size: 2rem;
@@ -58,7 +59,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    /* active */
+
 
                     &:after {
                         transform: scaleY(1);
@@ -114,7 +115,7 @@
         &__poulpe {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s 2s backwards;
+            animation: menu 8s 1s backwards;
 
             &:hover {
                 & .choix__entrees__poulpe--prix {
@@ -124,9 +125,6 @@
                 & h3,
                 h3+p {
                     animation: pointiller 1s $delay forwards;
-                    // @media all and ( max-width: 374px) {
-                    //     width: 250px;
-                    // }
                 }
             }
         }
@@ -134,7 +132,7 @@
         &__veloute {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s 2s backwards;
+            animation: menu 6s 1s backwards;
 
             &:hover {
                 & .choix__entrees__veloute--prix {
@@ -151,7 +149,7 @@
         &__soupe {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s 2s backwards;
+            animation: menu 4s 1s backwards;
 
             &:hover {
                 & .choix__entrees__soupe--prix {
@@ -186,7 +184,7 @@
         &__coquilles {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s 2s backwards;
+            animation: menu 8s 1s backwards;
 
             &:hover {
                 & .choix__plats__coquilles--prix {
@@ -203,7 +201,7 @@
         &__magret {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s 2s backwards;
+            animation: menu 6s 1s backwards;
 
             &:hover {
                 & .choix__plats__magret--prix {
@@ -220,7 +218,7 @@
         &__pigeonneau {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s 2s backwards;
+            animation: menu 4s 1s backwards;
 
             &:hover {
                 & .choix__plats__pigeonneau--prix {
@@ -255,7 +253,7 @@
         &__violettes {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s 2s backwards;
+            animation: menu 8s 1s backwards;
 
             &:hover {
                 & .choix__desserts__violettes--prix {
@@ -272,7 +270,7 @@
         &__fondant {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s 2s backwards;
+            animation: menu 6s 1s backwards;
 
             &:hover {
                 & .choix__desserts__fondant--prix {
@@ -289,7 +287,7 @@
         &__millefeuille {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s 2s backwards;
+            animation: menu 4s 1s backwards;
 
             &:hover {
                 & .choix__desserts__millefeuille--prix {

@@ -273,7 +273,7 @@
                 & button {
                     background-color: white;
                     border-color: transparent;
-                    outline: 0;    /* retire la bordure du bouton à la selection */
+                    outline: 0;    
 
                     & i {
                         font-size: 2rem;
@@ -281,7 +281,7 @@
                         z-index: 1;
                         cursor: pointer;
 
-                        &:hover {  /* active */
+                        &:hover {  
 
                             &:after {
                                 transform: scaleY(1);

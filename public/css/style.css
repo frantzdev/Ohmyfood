@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -503,16 +502,12 @@ footer ul a {
   background-color: white;
   border-color: transparent;
   outline: 0;
-  /* retire la bordure du bouton à la selection */
 }
 .menu .container__carte__description button i {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-}
-.menu .container__carte__description button i:hover {
-  /* active */
 }
 .menu .container__carte__description button i:hover:after {
   transform: scaleY(1);
@@ -542,7 +537,7 @@ footer ul a {
 
 @media all and (min-width: 1025px) {
   .image {
-    width: unset;
+    width: 250%;
   }
 }
 .image img {
@@ -552,7 +547,7 @@ footer ul a {
 @media all and (min-width: 1025px) {
   .image img {
     width: 99%;
-    height: 100%;
+    height: 99%;
   }
 }
 
@@ -561,6 +556,7 @@ footer ul a {
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   overflow: overlay;
+  position: relative;
 }
 @media all and (min-width: 1025px) {
   .francaise {
@@ -582,16 +578,12 @@ footer ul a {
   background-color: #f6f6f6;
   border-color: transparent;
   outline: 0;
-  /* retire la bordure du bouton à la selection */
 }
 .francaise__titre .coeur i {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-}
-.francaise__titre .coeur i:hover {
-  /* active */
 }
 .francaise__titre .coeur i:hover:after {
   transform: scaleY(1);
@@ -617,12 +609,6 @@ footer ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-}
-@media all and (min-width: 1025px) {
-  .choix {
-    position: none;
-  }
 }
 .choix__entrees {
   padding: 10px;
@@ -654,7 +640,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__poulpe {
@@ -731,7 +717,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__veloute {
@@ -808,7 +794,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__soupe {
@@ -899,7 +885,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__coquilles {
@@ -976,7 +962,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__magret {
@@ -1053,7 +1039,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__pigeonneau {
@@ -1144,7 +1130,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__violettes {
@@ -1221,7 +1207,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__fondant {
@@ -1298,7 +1284,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__millefeuille {
@@ -1379,7 +1365,7 @@ footer ul a {
 
 @media all and (min-width: 1025px) {
   .enchantee-image {
-    width: unset;
+    width: 250%;
   }
 }
 .enchantee-image img {
@@ -1389,7 +1375,7 @@ footer ul a {
 @media all and (min-width: 1025px) {
   .enchantee-image img {
     width: 99%;
-    height: 100%;
+    height: 99%;
   }
 }
 
@@ -1398,6 +1384,7 @@ footer ul a {
   border-radius: 40px 40px 0 0;
   margin-top: -170px;
   overflow: overlay;
+  position: relative;
 }
 @media all and (min-width: 1025px) {
   .enchantee {
@@ -1420,16 +1407,12 @@ footer ul a {
   background-color: #f6f6f6;
   border-color: transparent;
   outline: 0;
-  /* retire la bordure du bouton à la selection */
 }
 .enchantee__titre .coeur i {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-}
-.enchantee__titre .coeur i:hover {
-  /* active */
 }
 .enchantee__titre .coeur i:hover:after {
   transform: scaleY(1);
@@ -1455,12 +1438,6 @@ footer ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-}
-@media all and (min-width: 1025px) {
-  .choix {
-    position: none;
-  }
 }
 .choix__entrees {
   padding: 10px;
@@ -1492,7 +1469,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__ravioles {
@@ -1569,7 +1546,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__caviar {
@@ -1646,7 +1623,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__homard-espuma {
@@ -1723,7 +1700,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 2s 1s backwards;
+  animation: menu 1s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__canard-cuit {
@@ -1814,7 +1791,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__saintjacques {
@@ -1891,7 +1868,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__langoustine {
@@ -1968,7 +1945,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__queue {
@@ -2059,7 +2036,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__macaronnoisette {
@@ -2136,7 +2113,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__baba {
@@ -2213,7 +2190,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__tartecitron {
@@ -2294,7 +2271,7 @@ footer ul a {
 
 @media all and (min-width: 1025px) {
   .image {
-    width: unset;
+    width: 250%;
   }
 }
 .image img {
@@ -2313,6 +2290,7 @@ footer ul a {
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   overflow: overlay;
+  position: relative;
 }
 @media all and (min-width: 1025px) {
   .delice {
@@ -2334,16 +2312,12 @@ footer ul a {
   background-color: #f6f6f6;
   border-color: transparent;
   outline: 0;
-  /* retire la bordure du bouton à la selection */
 }
 .delice__titre .coeur i {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-}
-.delice__titre .coeur i:hover {
-  /* active */
 }
 .delice__titre .coeur i:hover:after {
   transform: scaleY(1);
@@ -2369,12 +2343,6 @@ footer ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-}
-@media all and (min-width: 1025px) {
-  .choix {
-    position: none;
-  }
 }
 .choix__entrees {
   padding: 10px;
@@ -2406,7 +2374,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__tartare {
@@ -2483,7 +2451,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__bouchee {
@@ -2560,7 +2528,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__cepes {
@@ -2651,7 +2619,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__poulet {
@@ -2728,7 +2696,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__langoustine-rotie {
@@ -2805,7 +2773,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__angus {
@@ -2896,7 +2864,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__farandole {
@@ -2973,7 +2941,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__brulee {
@@ -3050,7 +3018,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__tiramisu {
@@ -3131,8 +3099,7 @@ footer ul a {
 
 @media all and (min-width: 1025px) {
   .image {
-    width: unset;
-    /* pour placer l'image */
+    width: 250%;
   }
 }
 .image img {
@@ -3142,6 +3109,7 @@ footer ul a {
 @media all and (min-width: 1025px) {
   .image img {
     width: 99%;
+    height: 99%;
   }
 }
 
@@ -3150,6 +3118,7 @@ footer ul a {
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   overflow: overlay;
+  position: relative;
 }
 @media all and (min-width: 1025px) {
   .palette {
@@ -3171,16 +3140,12 @@ footer ul a {
   background-color: #f6f6f6;
   border-color: transparent;
   outline: 0;
-  /* retire la bordure du bouton à la selection */
 }
 .palette__titre button i {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-}
-.palette__titre button i:hover {
-  /* active */
 }
 .palette__titre button i:hover:after {
   transform: scaleY(1);
@@ -3206,12 +3171,6 @@ footer ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-}
-@media all and (min-width: 1025px) {
-  .choix {
-    position: none;
-  }
 }
 .choix__entrees {
   padding: 10px;
@@ -3243,7 +3202,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__escargot {
@@ -3320,7 +3279,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__foiegras {
@@ -3397,7 +3356,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__entrees__oeuf {
@@ -3489,7 +3448,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__herbes {
@@ -3566,7 +3525,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__parmentier {
@@ -3643,7 +3602,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__plats__turbot {
@@ -3735,7 +3694,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 8s 2s backwards;
+  animation: menu 8s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__parisbrest {
@@ -3812,7 +3771,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 6s 2s backwards;
+  animation: menu 6s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__chocolat {
@@ -3889,7 +3848,7 @@ footer ul a {
   background-color: white;
   overflow: hidden;
   white-space: nowrap;
-  animation: menu 4s 2s backwards;
+  animation: menu 4s 1s backwards;
 }
 @media all and (max-width: 374px) {
   .choix__desserts__mousse {

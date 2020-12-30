@@ -540,9 +540,6 @@ footer ul a {
   }
 }
 
-.image {
-  width: 100%;
-}
 @media all and (min-width: 1025px) {
   .image {
     width: unset;
@@ -1380,9 +1377,6 @@ footer ul a {
   }
 }
 
-.enchantee-image {
-  width: 100%;
-}
 @media all and (min-width: 1025px) {
   .enchantee-image {
     width: unset;
@@ -2298,9 +2292,6 @@ footer ul a {
   }
 }
 
-.image {
-  width: 100%;
-}
 @media all and (min-width: 1025px) {
   .image {
     width: unset;
@@ -3138,9 +3129,6 @@ footer ul a {
   }
 }
 
-.image {
-  width: 100%;
-}
 @media all and (min-width: 1025px) {
   .image {
     width: unset;

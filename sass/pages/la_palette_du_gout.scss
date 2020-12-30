@@ -58,8 +58,8 @@
                 z-index: 1;
                 cursor: pointer;
 
-                &:active {
-                    /* hover */
+                &:hover {
+                    /* active */
 
                     &:after {
                         transform: scaleY(1);
@@ -113,7 +113,7 @@
         &__escargot {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__entrees__escargot--prix {
@@ -130,7 +130,7 @@
         &__foiegras {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__entrees__foiegras--prix {
@@ -147,7 +147,7 @@
         &__oeuf {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__entrees__oeuf--prix {
@@ -183,7 +183,7 @@
         &__herbes {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__plats__herbes--prix {
@@ -200,7 +200,7 @@
         &__parmentier {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__plats__parmentier--prix {
@@ -217,7 +217,7 @@
         &__turbot {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__plats__turbot--prix {
@@ -253,7 +253,7 @@
         &__parisbrest {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__desserts__parisbrest--prix {
@@ -270,7 +270,7 @@
         &__chocolat {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__desserts__chocolat--prix {
@@ -287,7 +287,7 @@
         &__mousse {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__desserts__mousse--prix {

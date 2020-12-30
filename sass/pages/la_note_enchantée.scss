@@ -58,8 +58,8 @@
                 z-index: 1;
                 cursor: pointer;
 
-                &:active {
-                    /* hover */
+                &:hover {
+                    /* active */
 
                     &:after {
                         transform: scaleY(1);
@@ -113,7 +113,7 @@
         &__ravioles {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__entrees__ravioles--prix {
@@ -130,7 +130,7 @@
         &__caviar {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__entrees__caviar--prix {
@@ -147,7 +147,7 @@
         &__homard-espuma {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__entrees__homard-espuma--prix {
@@ -164,7 +164,7 @@
         &__canard-cuit {
             @include choix-assiette;
             @include validation;
-            animation: menu 2s;
+            animation: menu 2s 1s backwards;
 
             &:hover {
                 & .choix__entrees__canard-cuit--prix {
@@ -199,7 +199,7 @@
         &__saintjacques {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__plats__saintjacques--prix {
@@ -216,7 +216,7 @@
         &__langoustine {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__plats__langoustine--prix {
@@ -233,7 +233,7 @@
         &__queue {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__plats__queue--prix {
@@ -268,7 +268,7 @@
         &__macaronnoisette {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__desserts__macaronnoisette--prix {
@@ -285,7 +285,7 @@
         &__baba {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__desserts__baba--prix {
@@ -302,7 +302,7 @@
         &__tartecitron {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__desserts__tartecitron--prix {

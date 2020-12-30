@@ -57,8 +57,8 @@
                 z-index: 1;
                 cursor: pointer;
 
-                &:active {
-                    /* hover */
+                &:hover {
+                    /* active */
 
                     &:after {
                         transform: scaleY(1);
@@ -114,7 +114,7 @@
         &__poulpe {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__entrees__poulpe--prix {
@@ -134,7 +134,7 @@
         &__veloute {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__entrees__veloute--prix {
@@ -151,7 +151,7 @@
         &__soupe {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__entrees__soupe--prix {
@@ -186,7 +186,7 @@
         &__coquilles {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__plats__coquilles--prix {
@@ -203,7 +203,7 @@
         &__magret {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__plats__magret--prix {
@@ -220,7 +220,7 @@
         &__pigeonneau {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__plats__pigeonneau--prix {
@@ -255,7 +255,7 @@
         &__violettes {
             @include choix-assiette;
             @include validation;
-            animation: menu 8s;
+            animation: menu 8s 2s backwards;
 
             &:hover {
                 & .choix__desserts__violettes--prix {
@@ -272,7 +272,7 @@
         &__fondant {
             @include choix-assiette;
             @include validation;
-            animation: menu 6s;
+            animation: menu 6s 2s backwards;
 
             &:hover {
                 & .choix__desserts__fondant--prix {
@@ -289,7 +289,7 @@
         &__millefeuille {
             @include choix-assiette;
             @include validation;
-            animation: menu 4s;
+            animation: menu 4s 2s backwards;
 
             &:hover {
                 & .choix__desserts__millefeuille--prix {

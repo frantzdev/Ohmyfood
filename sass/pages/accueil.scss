@@ -281,7 +281,7 @@
                         z-index: 1;
                         cursor: pointer;
 
-                        &:active {  /* hover */
+                        &:hover {  /* active */
 
                             &:after {
                                 transform: scaleY(1);

@@ -555,7 +555,6 @@ footer ul a {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
-  overflow: overlay;
   position: relative;
 }
 @media all and (min-width: 1025px) {
@@ -1383,7 +1382,6 @@ footer ul a {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -170px;
-  overflow: overlay;
   position: relative;
 }
 @media all and (min-width: 1025px) {
@@ -2289,7 +2287,6 @@ footer ul a {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
-  overflow: overlay;
   position: relative;
 }
 @media all and (min-width: 1025px) {
@@ -3117,7 +3114,6 @@ footer ul a {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
-  overflow: overlay;
   position: relative;
 }
 @media all and (min-width: 1025px) {

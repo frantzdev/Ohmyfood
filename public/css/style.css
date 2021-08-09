@@ -476,7 +476,6 @@ footer ul a {
 }
 .menu .container__carte--photo {
   height: 175px;
-  display: flex;
 }
 .menu .container__carte--photo img {
   width: 100%;

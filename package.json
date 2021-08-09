@@ -9,5 +9,8 @@
   },
   "author": "",
   "license": "ISC",
-  "browsers": "last 2 versions"
+  "browsers": "last 2 versions",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
 }
